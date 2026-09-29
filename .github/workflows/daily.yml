@@ -1,0 +1,77 @@
+name: daily-job-pipeline
+
+on:
+  schedule:
+    - cron: "30 4 * * *"   # 04:30 UTC = 09:30 Pakistan time, daily (GitHub may delay a few minutes)
+  workflow_dispatch: {}     # "Run workflow" button for manual triggers
+
+permissions:
+  contents: write          # needed to commit tracker + reports back to the repo
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore Gmail credentials and personal config from secrets
+        env:
+          GMAIL_CREDENTIALS_JSON: ${{ secrets.GMAIL_CREDENTIALS_JSON }}
+          GMAIL_TOKEN_JSON: ${{ secrets.GMAIL_TOKEN_JSON }}
+          PROFILE_JSON: ${{ secrets.PROFILE_JSON }}
+          SETTINGS_JSON: ${{ secrets.SETTINGS_JSON }}
+        run: |
+          python - <<'EOF'
+          import os, pathlib
+          pairs = (("GMAIL_CREDENTIALS_JSON", "credentials.json"),
+                   ("GMAIL_TOKEN_JSON", "token.json"),
+                   ("PROFILE_JSON", "config/profile.json"),
+                   ("SETTINGS_JSON", "config/settings.json"))
+          for name, target in pairs:
+              val = os.environ.get(name, "")
+              if val:
+                  pathlib.Path(target).write_text(val, encoding="utf-8")
+                  print(f"{target}: restored from secret")
+              else:
+                  print(f"{target}: secret missing")
+          # fall back to sanitized examples so the public repo still runs end-to-end
+          for target, example in (("config/profile.json", "config/profile.example.json"),
+                                  ("config/settings.json", "config/settings.example.json")):
+              if not pathlib.Path(target).exists():
+                  pathlib.Path(target).write_text(pathlib.Path(example).read_text(encoding="utf-8"))
+                  print(f"{target}: using sanitized example")
+          EOF
+
+      - name: Run pipeline (collect -> score -> tailor -> Gmail drafts)
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
+          JSEARCH_API_KEY: ${{ secrets.JSEARCH_API_KEY }}
+          TAILOR_API_BASE: ${{ secrets.TAILOR_API_BASE }}
+          TAILOR_API_KEY: ${{ secrets.TAILOR_API_KEY }}
+          TAILOR_MODEL: ${{ secrets.TAILOR_MODEL }}
+        run: python run_daily.py --auto
+
+      - name: Commit tracker + reports back to repo
+        run: |
+          git config user.name "job-bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data
+          git add -f data/tracker.db out/source_health.json out/auto_summary_*.md \
+                    out/dry_run_report_*.md out/matches_*.json tailored/ || true
+          git commit -m "ci: daily run $(date -u +%F) $(date -u +%H:%M UTC)" || echo "nothing new to commit"
+          git push

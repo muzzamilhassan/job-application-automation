@@ -1,0 +1,52 @@
+{
+  "name": "Your Name",
+  "title": "Full Stack Developer (MERN / PERN / Next.js - SaaS)",
+  "location": "Your City, Country",
+  "contact": {
+    "application_email": "your.email@gmail.com",
+    "cv_email": "your.email@gmail.com",
+    "phone": "+10000000000",
+    "linkedin": "link in CV PDF",
+    "github": "link in CV PDF"
+  },
+  "summary": "Full Stack Developer building production SaaS products end-to-end on the JavaScript/TypeScript ecosystem. React/Next.js (App Router, SSR/ISR), TypeScript, TanStack Query; backend in Node.js, Express.js, NestJS. SQL depth across PostgreSQL, MySQL, SQLite (Drizzle ORM) plus MongoDB/Firebase/Supabase. AI delivery with LangChain, LangGraph, OpenAI API.",
+  "skills": {
+    "languages": ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+    "frontend": ["React.js", "Next.js", "React Native", "Redux Toolkit", "TanStack Query", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "NestJS", "REST API Design", "JWT / OAuth2 Authentication", "RBAC"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Drizzle ORM", "Firebase", "Supabase"],
+    "ai": ["LangChain", "LangGraph", "OpenAI API"],
+    "data_viz": ["Recharts", "Chart.js"],
+    "cloud_devops": ["Vercel", "Docker", "GitHub Actions", "AWS Amplify"],
+    "tooling": ["Git", "GitHub", "Figma", "JIRA", "Stripe API", "S3-compatible storage"],
+    "practices": ["Component architecture", "Lazy Loading", "Code Splitting", "SEO", "a11y", "Performance Optimization"]
+  },
+  "experience": [
+    {
+      "company": "Example Company",
+      "role": "Full Stack Developer",
+      "period": "Jan 2025 - Present",
+      "work_type": "On-site",
+      "highlights": [
+        "Shipped production features for an enterprise product using Next.js App Router and TypeScript",
+        "Owned authentication and RBAC layer",
+        "Designed multi-database adapter system"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Example SaaS",
+      "kind": "SaaS platform (Live)",
+      "stack": ["Next.js", "TypeScript", "PostgreSQL"],
+      "highlights": ["Built end-to-end with CI/CD and containerization"]
+    }
+  ],
+  "education": {
+    "school": "Your University",
+    "degree": "BS in Computer Science",
+    "period": "2020 - 2024",
+    "location": "Country"
+  },
+  "languages_spoken": ["English", "Your Language"]
+}

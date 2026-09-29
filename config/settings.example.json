@@ -1,0 +1,251 @@
+{
+  "application_email": "your.email@gmail.com",
+  "candidate_name": "Your Name",
+  "target_roles": [
+    "Full Stack Developer (MERN / PERN / Next.js)",
+    "MERN / PERN Stack Developer",
+    "Frontend Developer (React / Next.js)",
+    "Backend Developer (Node.js / NestJS / PostgreSQL / MySQL)",
+    "SaaS Full-Stack / SaaS Platform Engineer",
+    "AI Automation Engineer (MERN + LangChain / OpenAI)",
+    "AI-native product engineer / vibe-coding roles"
+  ],
+  "locations": {
+    "remote": "worldwide, preferred",
+    "on_site": "open",
+    "note": "Remote preferred, on-site accepted."
+  },
+  "salary": {
+    "pkr_monthly_min": 60000,
+    "usd_monthly_min": 500,
+    "rule": "Pakistan-based jobs: PKR 60,000+/month. USD-based / foreign companies: $500+/month (~$6,000/year). Jobs with no listed salary stay in the queue (neutral, not dropped).",
+    "set_by_user": "2026-09-09"
+  },
+  "experience_filter": {
+    "mode": "none",
+    "rule": "Apply to ANY job related to the target fields regardless of required experience - junior, mid, or senior. Seniority is never a filter, penalty, or boost.",
+    "set_by_user": "2026-09-09"
+  },
+  "matching": {
+    "threshold": 70,
+    "review_gate": "approve_all",
+    "note": "Every application waits for user approval in Gmail drafts (user sends manually)."
+  },
+  "auto": {
+    "enabled": true,
+    "trigger": "Windows scheduled task at logon (run_auto.bat)",
+    "drafts_per_run": 5,
+    "draft_only_when_employer_email_present": true,
+    "note": "Jobs without an employer email go to the browser-assist queue (Week 2 layer), never auto-drafted to a guessed address."
+  },
+  "limits": {
+    "daily_apply_cap": 15,
+    "delay_randomization_minutes": [
+      3,
+      25
+    ]
+  },
+  "sources": {
+    "hn_who_is_hiring": true,
+    "remoteok": true,
+    "weworkremotely": true,
+    "ats_company_boards": true,
+    "gmail_job_alerts_inbox": false,
+    "linkedin_indeed_glassdoor_browse": false
+  },
+  "ats_companies": {
+    "greenhouse": [
+      "vercel",
+      "openai",
+      "stripe",
+      "notion",
+      "datadog",
+      "cloudflare",
+      "figma",
+      "airbnb"
+    ],
+    "lever": [
+      "supabase",
+      "netlify",
+      "linear"
+    ],
+    "note": "4th source = direct company career pages. Add target companies here; unknown board tokens are skipped automatically."
+  },
+  "email_draft_rules": {
+    "never_send": true,
+    "subject_template": "Application: {job_title} - {candidate_name} (MERN / Next.js Full Stack)",
+    "attach_tailored_cv_docx": true
+  },
+  "sources_registry": {
+    "hn_whos_hiring": {
+      "enabled": true,
+      "seeds": [],
+      "note": "Algolia public API - AI/startup heavy"
+    },
+    "remoteok": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official public API"
+    },
+    "weworkremotely": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official RSS"
+    },
+    "remotive": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official public API"
+    },
+    "jobicy": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official public API, no key"
+    },
+    "arbeitnow": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official public API, no key"
+    },
+    "himalayas": {
+      "enabled": true,
+      "seeds": [],
+      "note": "official public API"
+    },
+    "greenhouse": {
+      "enabled": true,
+      "seeds": [
+        "vercel",
+        "stripe",
+        "datadog",
+        "cloudflare",
+        "figma",
+        "airbnb",
+        "motive",
+        "remote",
+        "gitlab",
+        "anthropic"
+      ],
+      "known_bad": [
+        "openai",
+        "notion"
+      ],
+      "note": "add target companies anytime"
+    },
+    "lever": {
+      "enabled": true,
+      "seeds": [
+        "duffel"
+      ],
+      "note": "add target companies anytime"
+    },
+    "ashby": {
+      "enabled": true,
+      "seeds": [
+        "ashby",
+        "linear",
+        "ramp",
+        "supabase",
+        "cursor",
+        "airbyte"
+      ],
+      "note": "add target companies anytime"
+    },
+    "smartrecruiters": {
+      "enabled": true,
+      "seeds": [
+        "gameloft"
+      ],
+      "note": "verified: gameloft lists 50 public postings; spotify board exposes 0. Add target companies anytime."
+    },
+    "recruitee": {
+      "enabled": false,
+      "seeds": [],
+      "note": "adapter ready; add company subdomains to enable"
+    },
+    "workable": {
+      "enabled": false,
+      "seeds": [],
+      "note": "v3 API needs signed payload - roadmap"
+    },
+    "adzuna": {
+      "enabled": true,
+      "seeds": [],
+      "note": "self-gates on ADZUNA_APP_ID/KEY env (GitHub Secret); pk + us searches"
+    },
+    "jooble": {
+      "enabled": true,
+      "seeds": [],
+      "note": "self-gates on JOOBLE_API_KEY env; Pakistan search"
+    },
+    "themuse": {
+      "enabled": true,
+      "seeds": [],
+      "note": "self-gates on THEMUSE_API_KEY env (key optional, raises limits)"
+    },
+    "jsearch": {
+      "enabled": true,
+      "seeds": [],
+      "note": "self-gates on JSEARCH_API_KEY env; read-window into LinkedIn/Indeed/Glassdoor/Rozee listings"
+    },
+    "gmail_job_alerts_inbox": {
+      "enabled": false,
+      "seeds": [],
+      "note": "read official LinkedIn/Indeed/Glassdoor alert emails from your Gmail - safe"
+    },
+    "linkedin_indeed_glassdoor_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "Week-2 browser-assist layer, see INTEGRATIONS.md safety playbook"
+    },
+    "linkedin_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "safe browser layer built; enable after one-time login: python browser/session.py --login linkedin"
+    },
+    "indeed_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "safe browser layer built; enable after one-time login: python browser/session.py --login indeed"
+    },
+    "glassdoor_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "safe browser layer built; enable after one-time login: python browser/session.py --login glassdoor"
+    },
+    "wellfound_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "safe browser layer; enable after one-time login: python browser/session.py --login wellfound. Tier-4 priority source: startup/AI roles, salary often listed in card."
+    },
+    "wats": {
+      "enabled": true,
+      "seeds": [],
+      "note": "YC Work at a Startup - THE startup source; 30 freshest YC jobs per run with salary + batch info"
+    },
+    "rozee_browse": {
+      "enabled": false,
+      "seeds": [],
+      "note": "Rozee CAPTCHA-challenges automated browsers (verified 2026-09-29). We never bypass challenges. Options: JSearch free key covers Rozee listings via Google Jobs; or assisted browsing with the user present. Flip enabled:true only if daily graceful skips are acceptable."
+    }
+  },
+  "browser_layer": {
+    "headless": false,
+    "search_keywords": [
+      "mern stack developer",
+      "full stack developer",
+      "react node developer",
+      "next.js developer",
+      "AI automation developer"
+    ],
+    "max_pages_per_site": 2,
+    "max_listings_per_site": 25,
+    "delay_between_actions_seconds": [
+      5,
+      12
+    ],
+    "operating_hours": "09:00-20:00",
+    "assisted_submit_only": true,
+    "note": "SITES NEED ONE-TIME MANUAL LOGIN: python browser/session.py --login all. Password never stored; session cookies live only in browser/chrome_profile/ (gitignored)."
+  }
+}
