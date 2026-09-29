@@ -248,9 +248,11 @@ def _collect_adzuna():
              f"&what={urllib.parse.quote(what)}&content-type=application/json")
         try:
             for r in get_json(u).get("results", []):
+                loc = r.get("location") or {}
+                loc_name = loc.get("display_name", "") if isinstance(loc, dict) else str(loc)
                 out.append(job(f"adzuna_{country}", r.get("id"), r.get("title"),
                                (r.get("company") or {}).get("display_name", ""),
-                               location=r.get("location") or country.upper(),
+                               location=loc_name or country.upper(),
                                url=r.get("redirect_url") or "",
                                date_str=r.get("created") or "",
                                text=f"{r.get('title')} | {strip_html(r.get('description') or '')[:2200]}",
