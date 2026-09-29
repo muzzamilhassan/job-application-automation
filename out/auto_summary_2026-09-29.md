@@ -1,22 +1,22 @@
 # Auto-run summary - 2026-09-29
-Gmail connected: True | already-tracked skipped: 0
+Gmail connected: True | already-tracked skipped: 3
 
-## [97] Senior Backend Developer (Node.js / Nest.js) - Proxify AB
+## [85] Full Stack Software Developer Remote - Hospitality Business inc
 - no employer email in posting - goes to browser-assist queue (Week 2 layer)
-- https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-3
+- https://www.indeed.com/viewjob?jk=0a577cb083605698
 
-## [80] Lead Developer — Rebuild, Modernize, & Scale (Social Good SaaS, Remote) - Track it Forward
+## [77] Full-Stack Developer (US-Based / Remote / Part-Time) - Implicit
 - no employer email in posting - goes to browser-assist queue (Week 2 layer)
-- https://weworkremotely.com/remote-jobs/track-it-forward-lead-developer-rebuild-modernize-scale-social-good-saas-remote
+- https://www.linkedin.com/jobs/view/full-stack-developer-us-based-remote-part-time-at-implicit-4427546524
 
-## [79] FULL TIME: Software Engineer Position - React and Rest - Yooli
+## [73] Senior React Native Developer - Lemon.io
 - no employer email in posting - goes to browser-assist queue (Week 2 layer)
-- https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1
+- https://weworkremotely.com/remote-jobs/lemon-io-senior-react-native-developer-1
 
-## [76] Senior Fullstack Developer (React.js / Node.js) - Proxify AB
+## [73] Tech Lead Full-Stack Rails Engineer - Mitre Media
 - no employer email in posting - goes to browser-assist queue (Week 2 layer)
-- https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-4
+- https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746
 
-## [73] Senior .NET Full-stack Developer - Lemon.io
+## [71] Software Developer AI Coding - STEUART NUTRITION
 - no employer email in posting - goes to browser-assist queue (Week 2 layer)
-- https://weworkremotely.com/remote-jobs/lemon-io-senior-net-full-stack-developer-1
+- https://weworkremotely.com/remote-jobs/steuart-nutrition-software-developer-ai-coding

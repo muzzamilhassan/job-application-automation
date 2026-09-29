@@ -22,6 +22,27 @@
   ]
  },
  {
+  "id": "jsearch-dfnknzrueg9zmmpzrnzmqkfbqufbqt09okvzd0jdb3dcuvvwcfzeujbtm1jrwkvoce5vowfnbgxuy1zcbl",
+  "source": "jsearch",
+  "title": "Full Stack Software Developer Remote",
+  "company": "Hospitality Business inc",
+  "location": "Anywhere",
+  "remote": true,
+  "url": "https://www.indeed.com/viewjob?jk=0a577cb083605698",
+  "date": "2026-09-20T00:00:00.000Z",
+  "salary_min": null,
+  "salary_max": null,
+  "text": "Full Stack Software Developer Remote | Part-time | Full Stack Software Developer - Part Time Hospitality Business Inc | S San Francisco, CA Join our dynamic team at Hospitality Business Inc, where we combine technology and hospitality to enhance customer experiences. As a Part-Time Full Stack Software Developer, you will have the opportunity to work remotely while contributing to innovative projects that drive our business forward. We are looking for passionate individuals who thrive in a fast-paced environment and are eager to make an impact through their technical expertise. Key Responsibilities \u2022 Develop and maintain web applications using modern frameworks and technologies. \u2022 Collaborate with cross-functional teams to define, design, and ship new features. \u2022 Optimize applications for maximum speed and scalability. \u2022 Debug and troubleshoot software issues, ensuring high-quality performance. \u2022 Participate in code reviews and maintain code quality standards. Requirements \u2022 Proven experience as a Full Stack Developer or similar role. \u2022 Strong knowledge of front-end technologies such as HTML, CSS, and JavaScript. \u2022 Experience with back-end frameworks, including Node.js, Ruby on Rails, or similar. \u2022 Familiarity with databases (SQL and NoSQL) and version control systems (e.g., Git). \u2022 Ability to work independently and manage multiple tasks effectively. \u2022 Excellent problem-solving skills and attention to detail. Schedule This is a part-time remote position with flexible working hours, allowing you to manage your time effectively while contributing to our projects. Why You'll Love Working Here \u2022 Work in a supportive and collaborative remote environment. \u2022 Opportunity for professional growth and skill development in the tech and hospitality sectors. \u2022 Be part of a company that values innovation and creativity. \u2022 Competitive compensation and potential for future opportunities. Join the Team If you're a motivated Full Stack Software Developer looking for a part-time opportunity to grow your career in a thriving industry, we want to hear from you! Apply today and become a vital part of our Hospitality Business Inc family.",
+  "score": 85,
+  "reasons": [
+   "role in title: developer, full stack, software developer",
+   "AI/automation: ai",
+   "stack: sql",
+   "remote",
+   "salary unlisted (neutral)"
+  ]
+ },
+ {
   "id": "weworkremotely-https-weworkremotely-com-remote-jobs-track-it-forward-lead-developer-rebuil",
   "source": "weworkremotely",
   "title": "Lead Developer \u2014 Rebuild, Modernize, & Scale (Social Good SaaS, Remote)",
@@ -60,6 +81,27 @@
    "role in title: react, software engineer",
    "AI/automation: ai",
    "stack: aws, nestjs, rest api, sql",
+   "remote",
+   "salary unlisted (neutral)"
+  ]
+ },
+ {
+  "id": "jsearch-oxqtr3c4qxe3m0fwvuy3mufbqufbqt09okvzd0jdb3dcuvvwcfzeujbta0kwvjnswvpytkpjr2xnyldoav",
+  "source": "jsearch",
+  "title": "Full-Stack Developer (US-Based / Remote / Part-Time)",
+  "company": "Implicit",
+  "location": "Anywhere",
+  "remote": true,
+  "url": "https://www.linkedin.com/jobs/view/full-stack-developer-us-based-remote-part-time-at-implicit-4427546524",
+  "date": "",
+  "salary_min": null,
+  "salary_max": null,
+  "text": "Full-Stack Developer (US-Based / Remote / Part-Time) | Part-time | Innovation is at the heart of what we do. At Implicit, we're building the world's leading AI Knowledge Engine for Maintenance and Support. We provide the trusted, accurate knowledge foundation for the hybrid workforce. Implicit is a secure, no-code AI platform that transforms complex, unstructured documentation and data into structured knowledge. We are seeking a part-time full-stack developer to join our team in the United States. As a Full-Stack Developer at Implicit, you will work closely with our data science and product teams to build the next-generation AI product support platform. Join Implicit and come work with some of the world's most talented data scientists, engineers, and thought leaders. As a Full-Stack Developer, you will: \u2022 Agentic Development: Work with maximum productivity using modern agentic coding tools such as Cursor, Codex and Playwright Agents. \u2022 Develop and Maintain Web Interfaces: Build responsive and interactive web applications using modern front-end technologies like React, Redux, React Query, styled modules, SASS, Tailwind, Ant Components. \u2022 Backend Services: Help to develop various backend services in Java, Spring Boot, Python, FastAPI, Postgres, Docker. \u2022 Testing and QA: Maintain high quality code by focusing on Test-Driven Development, using Playwright, Vitest, React Testing Library, test agents. \u2022 Collaborate with Teams: Work closely with the product team to implement designs and ensure that they are fully optimized across all platforms and browsers. \u2022 Write Clean, Maintainable Code: Ensure that code is modular, well-structured, and follows best practices for performance, scalability, and maintainability. \u2022 Optimize Web Performance: Focus on improving the performance of web applications through techniques like lazy loading, code splitting, and optimizing assets. \u2022 Debug and Troubleshoot: Identify issues, debug problems, and optimize the front-end code for improved speed and reliability. \u2022 Contribute to Code Reviews: Participate in code reviews to maintain high coding standards and learn from team members. \u2022 Stay Up-to-Date with AI Development Trends: Continuously learn and implement new front-end technologies, techniques, and be",
+  "score": 77,
+  "reasons": [
+   "role in title: developer, full-stack",
+   "AI/automation: agent, ai",
+   "stack: docker, tailwind",
    "remote",
    "salary unlisted (neutral)"
   ]

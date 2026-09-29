@@ -1,6 +1,6 @@
 # Dry-run match report - 2026-09-29
 
-Collected: 3958 | Above threshold (70): 8
+Collected: 3965 | Above threshold (70): 10
 
 Rules: experience ignored (any seniority) | PKR jobs 60k+/mo, USD $500+/mo, unlisted = neutral
 
@@ -8,6 +8,11 @@ Rules: experience ignored (any seniority) | PKR jobs 60k+/mo, USD $500+/mo, unli
 - Location: Remote | Remote: True
 - Apply: https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-3
 - Why: role in title: backend, developer, node, node.js; AI/automation: ai; stack: aws, docker, graphql, mongodb, nest.js, sql; remote; salary unlisted (neutral); seniority 'senior' - no filter applied per your rule
+
+## [85] Full Stack Software Developer Remote - Hospitality Business inc (jsearch)
+- Location: Anywhere | Remote: True
+- Apply: https://www.indeed.com/viewjob?jk=0a577cb083605698
+- Why: role in title: developer, full stack, software developer; AI/automation: ai; stack: sql; remote; salary unlisted (neutral)
 
 ## [80] Lead Developer — Rebuild, Modernize, & Scale (Social Good SaaS, Remote) - Track it Forward (weworkremotely)
 - Location: Remote | Remote: True
@@ -18,6 +23,11 @@ Rules: experience ignored (any seniority) | PKR jobs 60k+/mo, USD $500+/mo, unli
 - Location: Remote | Remote: True
 - Apply: https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1
 - Why: role in title: react, software engineer; AI/automation: ai; stack: aws, nestjs, rest api, sql; remote; salary unlisted (neutral)
+
+## [77] Full-Stack Developer (US-Based / Remote / Part-Time) - Implicit (jsearch)
+- Location: Anywhere | Remote: True
+- Apply: https://www.linkedin.com/jobs/view/full-stack-developer-us-based-remote-part-time-at-implicit-4427546524
+- Why: role in title: developer, full-stack; AI/automation: agent, ai; stack: docker, tailwind; remote; salary unlisted (neutral)
 
 ## [76] Senior Fullstack Developer (React.js / Node.js) - Proxify AB (weworkremotely)
 - Location: Remote | Remote: True
