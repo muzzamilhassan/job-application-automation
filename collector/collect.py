@@ -317,18 +317,18 @@ def _collect_jsearch():
               "full stack developer remote"):
         try:
             req = urllib.request.Request(
-                "https://jsearch.p.rapidapi.com/search?query="
-                + urllib.parse.quote(q) + "&page=1&num_pages=1",
+                "https://jsearch.p.rapidapi.com/search-v2?query="
+                + urllib.parse.quote(q) + "&num_pages=1",
                 headers={"X-RapidAPI-Key": key, "X-RapidAPI-Host": "jsearch.p.rapidapi.com"})
-            data = json.loads(urllib.request.urlopen(req, timeout=TIMEOUT).read().decode())
+            payload = json.loads(urllib.request.urlopen(req, timeout=TIMEOUT).read().decode())
         except Exception as e:
             print(f"  ! jsearch: {e}")
             continue
-        for r in data.get("data", []):
+        for r in payload.get("data", {}).get("jobs", []):
             out.append(job("jsearch", r.get("job_id"), r.get("job_title"), r.get("employer_name"),
                            location=r.get("job_location") or r.get("job_country") or "",
                            url=r.get("job_apply_link") or r.get("job_google_link") or "",
-                           date_str=r.get("job_posted_at_datetime_utc") or "",
+                           date_str=r.get("job_posted_at_datetime_utc") or r.get("job_posted_at") or "",
                            text=f"{r.get('job_title')} | {r.get('job_employment_type') or ''} | "
                                 f"{strip_html(r.get('job_description') or '')[:2200]}",
                            remote=r.get("job_is_remote"),

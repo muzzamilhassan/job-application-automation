@@ -127,9 +127,17 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
 
 
 def tailor(job_dict) -> tuple[Path, Path]:
-    """Tailor and return (md_path, docx_path)."""
+    """Tailor and return (md_path, docx_path). LLM failure (quota, network,
+    bad model) degrades gracefully to the deterministic template."""
     OUT.mkdir(exist_ok=True)
-    body = llm_tailor(job_dict) or fallback_tailor(job_dict)
+    try:
+        body = llm_tailor(job_dict)
+        if body:
+            print(f"  (LLM-tailored: {job_dict['title'][:40]})")
+    except Exception as e:
+        print(f"  ! LLM tailor failed ({e.__class__.__name__}: {str(e)[:80]}) - using template")
+        body = None
+    body = body or fallback_tailor(job_dict)
     md = OUT / f"cv_{slug(job_dict['company'])}_{slug(job_dict['title'])}.md"
     md.write_text(body, encoding="utf-8")
     dx = md.with_suffix(".docx")
