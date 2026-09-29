@@ -35,8 +35,12 @@ SENIORITY = ["senior", "sr.", "lead", "principal", "staff", "junior", "jr.",
              "entry level", "entry-level", "intern", "mid-level", "mid level"]
 
 SAL = SETTINGS["salary"]
-PKR_FLOOR = SAL["pkr_monthly_min"]      # 60000 / month
-USD_FLOOR = SAL["usd_monthly_min"]      # 500 / month
+PKR_FLOOR_PK = SAL["pkr_monthly_min"]           # Pakistan companies
+PKR_FLOOR_FOREIGN = SAL["foreign_pkr_monthly_min"]  # foreign companies, PKR-equivalent
+# approx monthly FX to PKR (edit here when rates move meaningfully)
+FX_TO_PKR = {"USD": 278.0, "EUR": 300.0, "GBP": 330.0, "INR": 3.35}
+PK_MARKERS = ["pakistan", "islamabad", "karachi", "lahore", "rawalpindi",
+              "faisalabad", "multan", "peshawar", "hyderabad, pk", "gujranwala"]
 
 
 def _hits(words, blob):
@@ -99,11 +103,16 @@ def score(j):
     info = salary_monthly(j)
     if info:
         amount, cur, note = info
-        floor = PKR_FLOOR if cur == "PKR" else USD_FLOOR
-        if amount >= floor:
-            s += 10; why.append(f"salary ~{amount:,.0f} {cur}/month >= {floor} ({note})")
+        is_pk = cur == "PKR" or any(m in (j.get("location") or "").lower() + " " + text
+                                    for m in PK_MARKERS)
+        floor = PKR_FLOOR_PK if is_pk else PKR_FLOOR_FOREIGN
+        amount_pkr = amount if cur == "PKR" else amount * FX_TO_PKR.get(cur, 278.0)
+        if amount_pkr >= floor:
+            s += 10
+            why.append(f"salary ~{amount:,.0f} {cur}/mo (~{amount_pkr:,.0f} PKR) >= floor {floor:,} ({note})")
         else:
-            s -= 5; why.append(f"salary ~{amount:,.0f} {cur}/month below {floor} floor ({note})")
+            s -= 5
+            why.append(f"salary ~{amount:,.0f} {cur}/mo (~{amount_pkr:,.0f} PKR) below {floor:,} floor ({note})")
     else:
         s += 5; why.append("salary unlisted (neutral)")
 
@@ -133,7 +142,7 @@ def main():
 
     lines = [f"# Dry-run match report - {today}", "",
              f"Collected: {len(jobs)} | Above threshold ({threshold}): {len(matches)}", "",
-             "Rules: experience ignored (any seniority) | PKR jobs 60k+/mo, USD $500+/mo, unlisted = neutral", ""]
+             "Rules: experience ignored | PK companies PKR 70k+/mo, foreign PKR 100k+/mo equiv, unlisted = neutral", ""]
     for j in matches[:40]:
         lines.append(f"## [{j['score']}] {j['title']} - {j['company']} ({j['source']})")
         lines.append(f"- Location: {j['location'] or '-'} | Remote: {j['remote']}")
