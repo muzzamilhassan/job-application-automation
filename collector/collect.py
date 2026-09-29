@@ -237,9 +237,11 @@ def _collect_adzuna():
         print("  - adzuna: no ADZUNA_APP_ID/KEY in env - skipped")
         return []
     out = []
-    # pk = Pakistan jobs; us = remote-heavy USD market (salary floor filters)
-    for country, what in (("pk", "mern stack developer"),
-                          ("pk", "full stack developer"),
+    # NOTE: Adzuna has NO Pakistan coverage (UNSUPPORTED_COUNTRY) - supported:
+    # at au be br ca ch de es fr gb in it mx nl nz pl sg us za
+    # in = nearest Asian market (many India-remote roles); us = USD remote market
+    for country, what in (("in", "mern stack developer"),
+                          ("in", "full stack developer"),
                           ("us", "mern developer remote")):
         u = (f"https://api.adzuna.com/v1/api/jobs/{country}/search/1"
              f"?app_id={app_id}&app_key={app_key}&results_per_page=50"
