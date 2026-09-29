@@ -60,7 +60,7 @@ def llm_tailor(job_dict) -> str | None:
         }).encode(),
         headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
     )
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=180) as resp:
         return json.loads(resp.read())["choices"][0]["message"]["content"]
 
 
