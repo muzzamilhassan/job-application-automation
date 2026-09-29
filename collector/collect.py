@@ -265,7 +265,7 @@ def _collect_jooble():
         print("  - jooble: no JOOBLE_API_KEY in env - skipped")
         return []
     out = []
-    for kw in ("mern stack developer", "full stack developer react node"):
+    for kw in ("full stack developer", "react developer", "node js developer"):
         try:
             req = urllib.request.Request(
                 f"https://jooble.org/api/{key}",

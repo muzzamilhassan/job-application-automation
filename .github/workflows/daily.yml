@@ -74,4 +74,5 @@ jobs:
           git add -f data/tracker.db out/source_health.json out/auto_summary_*.md \
                     out/dry_run_report_*.md out/matches_*.json tailored/ || true
           git commit -m "ci: daily run $(date -u +%F) $(date -u +%H:%M UTC)" || echo "nothing new to commit"
+          git pull --rebase -q origin main || true
           git push
