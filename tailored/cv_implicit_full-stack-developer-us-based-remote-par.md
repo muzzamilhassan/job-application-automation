@@ -1,33 +1,32 @@
 # MUZZAMIL HASSAN
 Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
-Email: muzzamilhassandev@gmail.com | Phone: +923055779207
+muzzamilhassandev@gmail.com | +923055779207
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in architecting and shipping production-grade SaaS products on the JavaScript/TypeScript ecosystem. Specialized in AI-powered applications using LangChain, LangGraph, and OpenAI API. Proficient in building responsive web applications with React, Next.js, and TypeScript, alongside backend development with Node.js, Express.js, and NestJS. Experienced with performance optimization techniques including SSR, caching, lazy loading, and code splitting. Committed to writing clean, maintainable code and collaborating with cross-functional teams to deliver high-quality products.
+Full Stack Developer with expertise in building production-grade SaaS products using JavaScript/TypeScript ecosystem. Proficient in React, Next.js, TypeScript, and modern frontend technologies. Strong backend experience with Node.js, Express.js, and database management across PostgreSQL, MySQL, and MongoDB. Demonstrated success in developing AI-powered platforms (RextAI, HireIQ) using LangChain, LangGraph, and OpenAI API. Committed to writing clean, maintainable code with performance optimization through lazy loading, code splitting, and modern development practices.
 
 ## TECHNICAL SKILLS
 **Frontend Development:** React.js, Next.js, Redux Toolkit, TanStack Query, Tailwind CSS, HTML5, CSS3, JavaScript (ES6+), TypeScript
 
 **Backend Development:** Node.js, Express.js, NestJS, REST API Design, JWT/OAuth2 Authentication, RBAC
 
-**AI & Machine Learning:** LangChain, LangGraph, OpenAI API
-
 **Databases:** PostgreSQL, MySQL, SQLite, MongoDB, Drizzle ORM, Firebase, Supabase
 
-**Testing & Quality Assurance:** Experience with performance optimization, code splitting, lazy loading, and maintaining high-quality code standards
+**AI & Machine Learning:** LangChain, LangGraph, OpenAI API
+
+**Testing & Quality Assurance:** Performance optimization, Test-Driven Development practices
 
 **DevOps & Cloud:** Vercel (CI/CD, Edge Functions), Docker, GitHub Actions, AWS Amplify
 
-**Tools & Practices:** Git, GitHub, Bitbucket, Figma, JIRA, Component architecture, SEO, a11y, Performance Optimization
+**Tools & Practices:** Git, GitHub, Figma, JIRA, Component architecture, Lazy Loading, Code Splitting, SEO, a11y
 
 ## PROFESSIONAL EXPERIENCE
 **Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
-- Architected and shipped production features for an enterprise headless CMS (Nextly) using Next.js App Router, TypeScript, and TanStack Query
-- Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system supporting multiple user roles
-- Designed and maintained a pluggable multi-database adapter system (PostgreSQL, MySQL, SQLite)
+- Architected and shipped production features for enterprise headless CMS using Next.js App Router, TypeScript, and TanStack Query
+- Owned full authentication and access control layer with JWT-based auth and flexible RBAC system
+- Designed and maintained pluggable multi-database adapter system (PostgreSQL, MySQL, SQLite)
 - Optimized performance and UX through SSR, caching, lazy loading, code splitting, and API improvements
-- Built a fully customizable admin dashboard for collections, media uploads, user roles, and system settings
-- Delivered pixel-perfect, responsive UIs from Figma designs with Tailwind CSS, strict a11y and SEO standards
+- Built customizable admin dashboard with pixel-perfect UIs using Tailwind CSS, adhering to strict a11y and SEO standards
 
 ## KEY PROJECTS
 **RextAI** | AI-Powered Content Intelligence Platform (Live)
@@ -35,18 +34,16 @@ Full Stack Developer with expertise in architecting and shipping production-grad
 - AI article generation editor with keyword input, E-E-A-T optimization controls, and humanization layer
 - One-click CMS auto-publish integrating WordPress, Webflow, and Ghost APIs with OAuth flows
 - Frontend performance via SSR, caching, lazy loading, code splitting
-- Stack: Next.js, React.js, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
 
 **HireIQ** | AI-Powered Recruitment & Evaluation Platform (Live)
 - AI-assisted recruitment and candidate evaluation platform built end-to-end
-- Stack: Next.js, React, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
+- Implements modern agentic development practices with TypeScript and React
 
 **Nextly** | Enterprise Headless CMS & SaaS Framework (Live)
 - TypeScript-first CMS framework for content-driven products inside Next.js
-- Dual-mode content workflow: code-defined models plus drag-and-drop visual builder with instant preview
-- RBAC with permissions for team content access
+- Dual-mode content workflow: code-defined models plus drag-and-drop visual builder
 - PostgreSQL, MySQL, SQLite via pluggable Drizzle ORM adapters
-- Stack: Next.js, TypeScript, Drizzle ORM, Node.js, TanStack Query, Docker, Monorepo
+- Fully containerized with Docker; reproducible builds and CI/CD
 
 ## EDUCATION
 **BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024

@@ -8,91 +8,91 @@
  "remoteok": {
   "ok": true,
   "jobs": 99,
-  "secs": 0.7,
+  "secs": 0.4,
   "error": null
  },
  "weworkremotely": {
   "ok": true,
   "jobs": 47,
-  "secs": 1.0,
+  "secs": 0.3,
   "error": null
  },
  "remotive": {
   "ok": true,
   "jobs": 16,
-  "secs": 0.2,
+  "secs": 0.1,
   "error": null
  },
  "jobicy": {
   "ok": true,
   "jobs": 50,
-  "secs": 0.4,
+  "secs": 0.1,
   "error": null
  },
  "arbeitnow": {
   "ok": true,
   "jobs": 326,
-  "secs": 0.6,
+  "secs": 0.2,
   "error": null
  },
  "himalayas": {
   "ok": true,
   "jobs": 20,
-  "secs": 0.2,
+  "secs": 0.1,
   "error": null
  },
  "wats": {
   "ok": true,
   "jobs": 30,
-  "secs": 0.4,
+  "secs": 0.7,
   "error": null
  },
  "adzuna": {
   "ok": true,
   "jobs": 0,
-  "secs": 0.0,
+  "secs": 6.4,
   "error": null
  },
  "jooble": {
   "ok": true,
   "jobs": 0,
-  "secs": 0.5,
+  "secs": 0.6,
   "error": null
  },
  "themuse": {
   "ok": true,
   "jobs": 20,
-  "secs": 0.6,
+  "secs": 0.3,
   "error": null
  },
  "jsearch": {
   "ok": true,
-  "jobs": 10,
-  "secs": 35.6,
+  "jobs": 20,
+  "secs": 13.1,
   "error": null
  },
  "greenhouse": {
   "ok": true,
-  "jobs": 2787,
-  "secs": 0.9,
+  "jobs": 2786,
+  "secs": 0.6,
   "error": null
  },
  "lever": {
   "ok": true,
   "jobs": 0,
-  "secs": 0.2,
+  "secs": 0.4,
   "error": null
  },
  "ashby": {
   "ok": true,
   "jobs": 450,
-  "secs": 0.7,
+  "secs": 0.4,
   "error": null
  },
  "smartrecruiters": {
   "ok": true,
   "jobs": 54,
-  "secs": 0.7,
+  "secs": 0.6,
   "error": null
  }
 }
