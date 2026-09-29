@@ -26,7 +26,13 @@ The only thing not live yet: the one-time Gmail OAuth (below).
 5. Everything logged to `tracker.py` (SQLite) and `out/auto_summary_<date>.md`; raw log in `out/auto_log.txt`
 
 Run any piece manually: `python run_daily.py` (report only), `python run_daily.py --auto`,
-`python tracker.py list`. Optional fixed daily time (needs one admin command):
+`python tracker.py list`.
+
+**Assisted apply (apply-URL jobs):** `python browser/apply_queue.py` — walks the
+queued jobs one by one: opens the ATS form, auto-fills name/email/phone/links/cover
+note from your profile, uploads the tailored CV, and leaves the SUBMIT click to you.
+One-time setup for full autofill: real `linkedin_url`/`github_url` in
+config/profile.json, and your standard answers in settings → browser_layer.auto_answers. Optional fixed daily time (needs one admin command):
 `schtasks /Create /TN "MERN Job Automation" /TR "C:\Users\Revnix\Desktop\personal\automation\run_auto.bat" /SC DAILY /ST 09:00 /F`
 
 ## Gmail drafts setup (one time, ~10 min — the ONLY remaining step)

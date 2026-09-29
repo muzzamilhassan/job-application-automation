@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><title>Apply - Mock Greenhouse</title></head><body>
+<form id="application-form" method="post">
+  <label for="first">First Name</label><input id="first" name="job_application[first_name]" type="text">
+  <label for="last">Last Name</label><input id="last" name="job_application[last_name]" type="text">
+  <label for="em">Email</label><input id="em" name="job_application[email]" type="email">
+  <label for="ph">Phone</label><input id="ph" name="job_application[phone]" type="tel">
+  <label for="li">LinkedIn Profile</label><input id="li" name="job_application[social][linkedin]" type="text">
+  <label for="qt">Why do you want to work here?</label><textarea id="qt" name="job_application[questionnaire_answers][0][answer_text]"></textarea>
+  <label>Resume</label><input type="file" name="job_application[resume]" id="resume">
+  <label for="yg">Years of experience</label>
+  <select id="yg" name="job_application[questionnaire][years]">
+    <option value="">Select</option><option>0-1</option><option>1-3</option><option>2-4</option><option>5+</option>
+  </select>
+  <button type="submit">Submit Application</button>
+</form></body></html>
