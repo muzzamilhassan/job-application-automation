@@ -76,6 +76,7 @@ def auto_flow(matches_file):
     matches = json.loads(matches_file.read_text(encoding="utf-8"))
 
     # never re-draft a job that is already tracked (any status)
+    (ROOT / "data").mkdir(exist_ok=True)  # fresh CI checkouts have no data dir
     c = sqlite3.connect(ROOT / "data" / "tracker.db")
     seen = {r[0] for r in c.execute("SELECT job_id FROM applications")}
 
