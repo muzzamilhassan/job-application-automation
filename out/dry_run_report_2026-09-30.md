@@ -1,6 +1,6 @@
 # Dry-run match report - 2026-09-30
 
-Collected: 4066 | Above threshold (70): 21
+Collected: 4066 | Above threshold (70): 23
 
 Rules: experience ignored | PK companies PKR 70k+/mo, foreign PKR 100k+/mo equiv, unlisted = neutral
 
@@ -14,15 +14,20 @@ Rules: experience ignored | PK companies PKR 70k+/mo, foreign PKR 100k+/mo equiv
 - Apply: https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-3
 - Why: role in title: backend, developer, node, node.js; AI/automation: ai; stack: aws, docker, graphql, mongodb, nest.js, sql; remote; salary unlisted (neutral); seniority 'senior' - no filter applied per your rule
 
+## [90] Lead Full Stack Developer - (MERN/MEAN/Iots) - Fulcrum Pvt. Limited (jsearch)
+- Location: Pakistan | Remote: False
+- Apply: https://bebee.com/pk/jobs/lead-full-stack-developer-mern-mean-iots-fulcrum-pvt-limited-sindh--t7xk-785933787
+- Why: role in title: developer, full stack, mern; AI/automation: ai, automation; stack: express, mongodb; on-site ok; salary unlisted (neutral); seniority 'lead' - no filter applied per your rule
+
 ## [89] MernStack Developer (Node JS) - ALLSTAR TECHNOLOGY (jsearch)
 - Location: Karachi, Pakistan | Remote: False
 - Apply: https://bebee.com/pk/jobs/mernstack-developer-node-js-allstar-technology-karachi--t7xk-853247001
 - Why: role in title: developer, mern, node; AI/automation: ai; stack: aws, express, sql, tailwind; on-site ok; salary unlisted (neutral)
 
-## [85] Full Stack Software Developer Remote - Hospitality Business inc (jsearch)
-- Location: Anywhere | Remote: True
-- Apply: https://www.indeed.com/viewjob?jk=0a577cb083605698
-- Why: role in title: developer, full stack, software developer; AI/automation: ai; stack: sql; remote; salary unlisted (neutral)
+## [89] Full Stack Developer (mern Stack) - Web And Mobile Applications - Bixbyte Ltd. UK (jsearch)
+- Location: Karachi, Pakistan | Remote: False
+- Apply: https://www.itjobsinpakistan.com/jobs/view/full-stack-developer-mern-stack-web-and-mobile-applications
+- Why: role in title: developer, full stack, mern; AI/automation: ai; stack: aws, express, mongodb, sql; on-site ok; salary unlisted (neutral)
 
 ## [80] Senior Full Stack Developer Remote / Telecommute Jobs - By Light Professional IT Services (jsearch)
 - Location: Anywhere | Remote: True
@@ -49,10 +54,10 @@ Rules: experience ignored | PK companies PKR 70k+/mo, foreign PKR 100k+/mo equiv
 - Apply: https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-4
 - Why: role in title: developer, fullstack, node, node.js, react; AI/automation: ai; stack: mongodb, sql; remote; salary unlisted (neutral); seniority 'senior' - no filter applied per your rule
 
-## [74] Mern Stack Developer - Red Star Technologies Pvt. Ltd. (jsearch)
-- Location: Islamabad, Pakistan | Remote: False
-- Apply: https://bebee.com/pk/jobs/mern-stack-developer-red-star-technologies-pvt-ltd-islamabad--t7xk-853118514
-- Why: role in title: developer, mern; AI/automation: ai; stack: aws, docker, express, mongodb; on-site ok; salary unlisted (neutral)
+## [75] MERN Developer - TechOn Ventures (jsearch)
+- Location: Karachi, Pakistan | Remote: False
+- Apply: https://bebee.com/pk/jobs/mern-developer-techon-ventures-karachi-sindh--t7xk-823570592
+- Why: role in title: developer, mern; AI/automation: ai, automation; stack: mongodb, rest api, sql; on-site ok; salary unlisted (neutral)
 
 ## [73] Senior .NET Full-stack Developer - Lemon.io (weworkremotely)
 - Location: Remote | Remote: True
@@ -78,6 +83,11 @@ Rules: experience ignored | PK companies PKR 70k+/mo, foreign PKR 100k+/mo equiv
 - Location: India | Remote: True
 - Apply: https://www.adzuna.in/details/5840187600?utm_medium=api&utm_source=3b14ff5a
 - Why: role in title: developer, mern; AI/automation: ai; stack: express, mongodb; remote; salary ~100,000 USD/mo (~27,800,000 PKR) >= floor 100,000 (listed yearly)
+
+## [72] Senior React Full-stack Developer, Remote Job - Lemon.io (jsearch)
+- Location: Anywhere | Remote: True
+- Apply: https://dynamitejobs.com/company/lemonio/remote-job/senior-react-full-stack-developer
+- Why: role in title: developer, full-stack, react; AI/automation: ai; stack: aws; remote; salary ~11 USD/mo (~3,058 PKR) below 100,000 floor (assumed monthly); seniority 'senior' - no filter applied per your rule
 
 ## [72] MERN Stack Developer - Midas Minds (adzuna_in)
 - Location: Delhi, India | Remote: False
