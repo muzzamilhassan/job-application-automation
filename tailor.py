@@ -21,6 +21,22 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+
+
+def _load_env():
+    """Tiny .env loader so local runs see the same keys CI gets from Secrets."""
+    envf = ROOT / ".env"
+    if not envf.exists():
+        return
+    for line in envf.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+
+_load_env()
+
 PROFILE = json.loads((ROOT / "config" / "profile.json").read_text(encoding="utf-8"))
 SETTINGS = json.loads((ROOT / "config" / "settings.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tailored"
@@ -127,22 +143,27 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
 
 
 def cover_letter(job_dict) -> str:
-    """Short application email body for a job. LLM when available, else template.
-    Facts only - never invents experience."""
+    """Short application letter BODY (no salutation/signature - wrapper adds
+    those). LLM when available, else structured template. Facts only."""
     base = os.environ.get("TAILOR_API_BASE")
     key = os.environ.get("TAILOR_API_KEY")
     model = os.environ.get("TAILOR_MODEL", "gpt-4o-mini")
+    posting = (job_dict.get("text") or "")[:1800]
     if base and key:
         try:
-            profile_facts = json.dumps({k: PROFILE[k] for k in ('name', 'title', 'summary', 'skills')}, indent=1)
+            profile_facts = json.dumps(
+                {k: PROFILE[k] for k in ("name", "title", "summary", "skills")},
+                indent=1)
             user = (
-                "PROFILE:\n" + profile_facts + "\n\n"
-                "JOB:\nTitle: " + job_dict['title'] + "\nCompany: " + job_dict['company'] +
-                "\nPosting: " + (job_dict.get('text') or '')[:1500] + "\n\n"
-                "Write a short job application email body (110-150 words) for this role. "
-                "No subject line, no salutation, no signature - just the letter paragraphs. "
-                "Open with the strongest relevant fact from the profile. Plain professional English. "
-                "Use ONLY facts from the profile; do not invent anything.")
+                "CANDIDATE PROFILE:\n" + profile_facts + "\n\n"
+                "JOB POSTING:\nTitle: " + job_dict["title"] +
+                "\nCompany: " + job_dict["company"] +
+                "\nDescription: " + (posting or "(not available - write generically but concretely)") + "\n\n"
+                "Write ONLY the middle paragraphs of an application letter (90-130 words, 2 short paragraphs).\n"
+                "Rules: do NOT start with 'I am applying' (the letter already says it); do NOT add "
+                "greetings, availability, or signature. Pick the 2-3 profile facts that best match "
+                "this specific posting and connect them to it concretely. Plain professional English, "
+                "no buzzword lists. Use ONLY profile facts; invent nothing.")
             req = urllib.request.Request(
                 f"{base.rstrip('/')}/chat/completions",
                 data=json.dumps({
@@ -154,16 +175,31 @@ def cover_letter(job_dict) -> str:
             )
             with urllib.request.urlopen(req, timeout=90) as resp:
                 text = json.loads(resp.read())["choices"][0]["message"]["content"].strip()
-            if 40 < len(text) < 1800:
+            # safety: strip any duplicated application sentence the model added
+            text = re.sub(r"^I(?:'|\u2019)?m applying[^.\n]*\.\s*", "", text, flags=re.I)
+            text = re.sub(r"^I am applying[^.\n]*\.\s*", "", text, flags=re.I)
+            if 60 < len(text) < 1600:
                 return text
         except Exception as e:
             print(f"  ! LLM cover letter failed ({e.__class__.__name__}) - template fallback")
-    p = PROFILE
-    ai = [s for s in p["skills"]["ai"] if s.lower() in (job_dict.get("text") or "").lower()]
-    ai_note = f" I have also shipped AI features end-to-end using {' and '.join(ai[:2])}." if ai else ""
-    return (f"I'm applying for the {job_dict['title']} role at {job_dict['company']}. "
-            f"{p['summary']} {ai_note} My tailored CV is attached, and I would welcome "
-            f"the chance to discuss how I can contribute to your team.")
+    # template fallback: pick job-relevant highlights, keep it human
+    blob = (job_dict["title"] + " " + posting).lower()
+    exp = PROFILE["experience"][0]
+    picks = [h for h in exp["highlights"] if any(
+        w in h.lower() for w in ("auth", "rbac", "dashboard", "performance", "ssr", "database", "cms"))]
+    picks = picks or exp["highlights"][:3]
+    ai = [s for s in PROFILE["skills"]["ai"] if s.lower() in blob]
+    lines = [
+        f"My background lines up closely with what this role needs:",
+        "",
+        *[f"- {h}" for h in picks[:3]],
+        "",
+        f"Across projects I have shipped SaaS platforms end-to-end - from an enterprise "
+        f"headless CMS to AI-driven products"
+        + (f" built with {' and '.join(ai[:2])}" if ai else "") +
+        " - always with clean, typed, production-ready code.",
+    ]
+    return "\n".join(lines)
 
 
 def tailor(job_dict) -> tuple[Path, Path]:
