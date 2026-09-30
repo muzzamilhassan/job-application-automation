@@ -82,7 +82,8 @@ def main():
             print(f"[{r['score']}] {r['title']}")
             print(f"  {r['company']} | {r['source']} | {r['url']}")
             ats = detect_ats(r["url"] or "", r["source"] or "")
-            cv = resolve_cv(r)
+            import tailor
+            cv = tailor.clean_cv(resolve_cv(r))
             print(f"  ATS: {ats} | CV: {cv.name if cv else 'NONE (will fill without upload)'}")
 
             driver.get(r["url"])

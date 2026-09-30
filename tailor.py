@@ -142,6 +142,22 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
     doc.save(str(out_path))
 
 
+def clean_cv(cv_path: Path | str | None, name: str = "MuzzamilHassan_CV.docx") -> Path | None:
+    """Copy a tailored CV to a clean, recruiter-facing filename.
+    Internal per-job files stay separate on disk; this is the copy that gets
+    attached to drafts and uploaded into ATS forms."""
+    if not cv_path:
+        return None
+    src = Path(cv_path)
+    if not src.exists():
+        return None
+    out_dir = ROOT / "out"
+    out_dir.mkdir(exist_ok=True)
+    dst = out_dir / name
+    dst.write_bytes(src.read_bytes())
+    return dst
+
+
 def cover_letter(job_dict) -> str:
     """Short application letter BODY (no salutation/signature - wrapper adds
     those). LLM when available, else structured template. Facts only."""

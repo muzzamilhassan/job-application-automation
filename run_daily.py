@@ -99,7 +99,7 @@ def auto_flow(matches_file):
             from gmail_drafts import create_draft
             subject = settings["email_draft_rules"]["subject_template"].format(
                 job_title=j["title"], candidate_name=settings["candidate_name"])
-            draft_id = create_draft(email, subject, draft_body(j), dx if dx.exists() else None)
+            draft_id = create_draft(email, subject, draft_body(j), tailor.clean_cv(dx))
             status, note = "drafted", f"Gmail draft to {email} (id={draft_id}) - NOT sent"
         c.execute("INSERT INTO applications (job_id,title,company,source,url,score,status,cv_path,notes) "
                   "VALUES (?,?,?,?,?,?,?,?,?)",
@@ -164,7 +164,7 @@ def auto_flow(matches_file):
                 to=settings["application_email"],
                 subject=f"Application: {j['title']} at {j['company']} — CV attached",
                 body=body,
-                attachments=[cv] if cv and cv.exists() else None)
+                attachments=[clean] if (clean := _tailor.clean_cv(cv)) else None)
             per_job_drafts += 1
             tdb.execute("UPDATE applications SET notes = COALESCE(notes,'') || ? "
                         "WHERE rowid_hint=?",
