@@ -142,21 +142,27 @@ def auto_flow(matches_file):
                         _tailor.md_to_docx(md.read_text(encoding="utf-8"), cv)
             if cv is None or not cv.exists():
                 _, cv = _tailor.tailor(j)
+            letter = _tailor.cover_letter(j)
+            prof = json.loads((ROOT / "config" / "profile.json").read_text(encoding="utf-8"))
+            contact = prof["contact"]
             body = (
-                f"JOB: {j['title']}\nCOMPANY: {j['company']}\nMATCH SCORE: {j['score']}/100\n"
-                f"APPLY: {j.get('url') or '(see posting)'}\n"
-                f"STATUS: {row['status']}\n"
-                + "-" * 60 +
-                f"\n\nPITCH YOU CAN PASTE OR FORWARD:\n\n{draft_body(j)}\n"
-                + "-" * 60 +
-                "\n\nNEXT STEP: form-apply jobs -> the Apply-Assist queue window "
-                "(auto-opens at logon) opens this exact form pre-filled; you review "
-                "and click Submit. If you find a real contact email for this job, "
-                "forward this draft and attach the CV (already attached).")
+                f"Dear Hiring Team,\n\n"
+                f"I am applying for the {j['title']} role at {j['company']}.\n\n"
+                f"{letter}\n\n"
+                f"My CV is attached. I am available for remote or on-site work and can "
+                f"join within two weeks (immediately if needed).\n\n"
+                f"Best regards,\n"
+                f"{prof['name']}\n"
+                f"{contact.get('application_email', '')} | {contact.get('phone', '')}\n"
+                f"{contact.get('linkedin_url', '')} | {contact.get('github_url', '')} | "
+                f"{contact.get('portfolio_url', '')}\n"
+                f"\n------------------------------\n"
+                f"Apply online: {j.get('url') or 'see posting'}\n"
+                f"Source: {j['source']} · Match: {j['score']}/100 · {row['status']}\n"
+                f"(Form-apply job: the Apply-Assist window opens this form pre-filled at logon.)")
             did = create_draft(
                 to=settings["application_email"],
-                subject=f"[Apply {j['score']}|{j['source'].split('_')[0].upper()}] "
-                        f"{j['title']} @ {j['company']}",
+                subject=f"Application: {j['title']} at {j['company']} — CV attached",
                 body=body,
                 attachments=[cv] if cv and cv.exists() else None)
             per_job_drafts += 1

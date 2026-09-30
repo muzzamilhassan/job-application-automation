@@ -126,6 +126,46 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
     doc.save(str(out_path))
 
 
+def cover_letter(job_dict) -> str:
+    """Short application email body for a job. LLM when available, else template.
+    Facts only - never invents experience."""
+    base = os.environ.get("TAILOR_API_BASE")
+    key = os.environ.get("TAILOR_API_KEY")
+    model = os.environ.get("TAILOR_MODEL", "gpt-4o-mini")
+    if base and key:
+        try:
+            profile_facts = json.dumps({k: PROFILE[k] for k in ('name', 'title', 'summary', 'skills')}, indent=1)
+            user = (
+                "PROFILE:\n" + profile_facts + "\n\n"
+                "JOB:\nTitle: " + job_dict['title'] + "\nCompany: " + job_dict['company'] +
+                "\nPosting: " + (job_dict.get('text') or '')[:1500] + "\n\n"
+                "Write a short job application email body (110-150 words) for this role. "
+                "No subject line, no salutation, no signature - just the letter paragraphs. "
+                "Open with the strongest relevant fact from the profile. Plain professional English. "
+                "Use ONLY facts from the profile; do not invent anything.")
+            req = urllib.request.Request(
+                f"{base.rstrip('/')}/chat/completions",
+                data=json.dumps({
+                    "model": model,
+                    "messages": [{"role": "user", "content": user}],
+                    "temperature": 0.4, "max_tokens": 500,
+                }).encode(),
+                headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
+            )
+            with urllib.request.urlopen(req, timeout=90) as resp:
+                text = json.loads(resp.read())["choices"][0]["message"]["content"].strip()
+            if 40 < len(text) < 1800:
+                return text
+        except Exception as e:
+            print(f"  ! LLM cover letter failed ({e.__class__.__name__}) - template fallback")
+    p = PROFILE
+    ai = [s for s in p["skills"]["ai"] if s.lower() in (job_dict.get("text") or "").lower()]
+    ai_note = f" I have also shipped AI features end-to-end using {' and '.join(ai[:2])}." if ai else ""
+    return (f"I'm applying for the {job_dict['title']} role at {job_dict['company']}. "
+            f"{p['summary']} {ai_note} My tailored CV is attached, and I would welcome "
+            f"the chance to discuss how I can contribute to your team.")
+
+
 def tailor(job_dict) -> tuple[Path, Path]:
     """Tailor and return (md_path, docx_path). LLM failure (quota, network,
     bad model) degrades gracefully to the deterministic template."""

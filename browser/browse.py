@@ -172,7 +172,7 @@ def collect_wellfound(driver):
             print(f"  ! wellfound: security wall on {slug} - stopping, nothing touched")
             break
         try:
-            cards = driver.execute_script(_WF_CARD_JS) or []
+            cards = driver.execute_script('return (' + _WF_CARD_JS + ')();') or []
         except Exception:
             continue  # bad role slug / empty page -> next keyword
         for c in cards[:SAFETY["max_listings_per_site"]]:
@@ -247,7 +247,7 @@ def collect_rozee(driver):
             print(f"  ! rozee: security wall detected ({block}) - stopping, nothing touched")
             break
         try:
-            cards = driver.execute_script(ROZEE_CARD_JS) or []
+            cards = driver.execute_script('return (' + ROZEE_CARD_JS + ')();') or []
         except Exception:
             continue
         for c in cards[:SAFETY["max_listings_per_site"]]:
@@ -264,7 +264,7 @@ COLLECTORS = {"linkedin": collect_linkedin, "indeed": collect_indeed,
               "glassdoor": collect_glassdoor, "wellfound": collect_wellfound,
               "rozee": collect_rozee}
 # sources that work without any login (read-only)
-NO_LOGIN_REQUIRED = {"rozee"}
+NO_LOGIN_REQUIRED = {"rozee", "wellfound"}
 
 
 def run_browser_sources() -> tuple[list[dict], dict]:
