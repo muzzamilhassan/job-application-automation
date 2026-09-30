@@ -174,6 +174,21 @@ def auto_flow(matches_file):
     except Exception as e:
         lines.append(f"## Per-job drafts FAILED: {e.__class__.__name__}: {str(e)[:120]}")
 
+    # ---- email hunter: find real company emails for form-apply jobs
+    try:
+        import email_hunter
+        if settings.get("email_hunter", {}).get("enabled", False):
+            prof = json.loads((ROOT / "config" / "profile.json").read_text(encoding="utf-8"))
+            hunted = email_hunter.process_queue(
+                settings["email_hunter"].get("daily_cap", 5), settings, prof)
+            hits = [h for h in hunted if h.get("email")]
+            if hits:
+                lines.append(f"## Email hunter: {len(hits)} company email(s) found")
+                for h in hits:
+                    lines.append(f"- {h['job'][:50]} -> {h['email']} ({h.get('source','')})")
+    except Exception as e:
+        lines.append(f"## Email hunter failed: {e.__class__.__name__}: {str(e)[:100]}")
+
     drafted_n = sum(1 for ln in lines if "Gmail draft to" in ln)
     digest_note = f"employer-email drafts: {drafted_n} | per-job drafts: {per_job_drafts} | " \
                   f"form-apply queue: {sum(1 for ln in lines if 'browser-assist queue' in ln)}"
