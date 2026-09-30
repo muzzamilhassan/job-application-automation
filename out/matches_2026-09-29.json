@@ -1,26 +1,5 @@
 [
  {
-  "id": "jsearch-eursymzqbuftb2i4lthqeefbqufbqt09okvzd0jdb3dcuvvwcfzeujbtmey1zfhwtlnizejhsejwtvmxt1",
-  "source": "jsearch",
-  "title": "MERN / Full Stack Developer",
-  "company": "Gray Mines",
-  "location": "Pakistan",
-  "remote": false,
-  "url": "https://www.glassdoor.co.uk/job-listing/mern-full-stack-developer-gray-mines-JV_KO0,25_KE26,36.htm?jl=1010244232796",
-  "date": "2026-09-27T00:00:00.000Z",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "MERN / Full Stack Developer | Full-time | \u2022 This is a full-time onsite role in Karachi.* We are looking for a developer who can own features end-to-end \u2014 from Figma design to production deployment \u2014 not someone who just follows tutorials. \u2022 What You\u2019ll Actually Do* Convert Figma designs \u2192 production-ready UI (Next.js) Build full-stack applications using MERN + NestJS Implement JWT + OAuth authentication systems Design and build scalable REST APIs Work with PostgreSQL + MongoDB (when needed) Implement queues using BullMQ + Redis Optimize apps for performance & scalability Handle SSR + CSR in Next.js properly Collaborate with team but also work independently without hand-holding \u2022 Required Skills (Non-Negotiable)* If you don\u2019t have MOST of these, don\u2019t apply: Strong grip on JavaScript (no basics struggle) Node.js + Express.js + NestJS React.js + Next.js (SSR & CSR both) MongoDB + PostgreSQL JWT + OAuth authentication Redux Toolkit (state management) Redis + BullMQ (background jobs / queues) Solid understanding of System Design (Mid-Level) Git, deployments, debugging skills \u2022 Experience* Minimum 4+ years REAL experience (Internships / course projects don\u2019t count unless you built production-level systems) \u2022 Bonus (Gives You Edge)* Experience with scalable systems DevOps basics (CI/CD, Docker, etc.) Working on high-traffic or real business apps \u2022 Who Should NOT Apply* Beginners / freshers Tutorial-based developers People who can\u2019t build projects without guidance Those looking for remote work \u2022 Mindset We Expect* You figure things out, not wait for instructions You write clean, maintainable code You take ownership, not excuses \u2022 Location* Onsite \u2013 Karachi Clifton (Mandatory) \u2022 Final Note* If you\u2019re just \u201clearning\u201d MERN, skip this. If you can build, ship, and solve real problems, apply. Pay: Rs50,000.00 - Rs100,000.00 per month Work Location: In person",
-  "score": 99,
-  "reasons": [
-   "role in title: developer, full stack, mern",
-   "AI/automation: ai, llm",
-   "stack: docker, express, mongodb, nestjs, rest api, sql",
-   "on-site ok",
-   "salary unlisted (neutral)"
-  ]
- },
- {
   "id": "weworkremotely-https-weworkremotely-com-remote-jobs-proxify-ab-senior-backend-developer-no",
   "source": "weworkremotely",
   "title": "Senior Backend Developer (Node.js / Nest.js)",
@@ -40,69 +19,6 @@
    "remote",
    "salary unlisted (neutral)",
    "seniority 'senior' - no filter applied per your rule"
-  ]
- },
- {
-  "id": "jsearch-zllfykdfqjcwu2fyx0dylufbqufbqt09okvzd0jdb3dcuvvwcfzeujbtmgrozwkxywfizg9uakzmzgtzmf",
-  "source": "jsearch",
-  "title": "Full Stack Developer (MERN Stack) \u2013 AI & Vibe Coding Experience",
-  "company": "Appalachian Growth Solutions",
-  "location": "Pakistan",
-  "remote": false,
-  "url": "https://bebee.com/pk/jobs/full-stack-developer-mern-stack-ai-vibe-coding-experience-appalachian-growth-solutions-wah-cantt-gpo--t7xk-821754614",
-  "date": "2026-08-29T00:00:00.000Z",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Full Stack Developer (MERN Stack) \u2013 AI & Vibe Coding Experience | Internship | We\u2019re looking for a Full Stack Developer to join our team on-site. We\u2019re looking for someone who has 2\u20133 years of hands-on experience building and working on web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). You should be comfortable working on both the frontend and backend, building APIs, working with databases, fixing bugs, and turning ideas into working products. We\u2019re also interested in someone who has an understanding of AI-assisted development / vibe coding and knows how to use modern AI tools to speed up development, explore ideas, debug code, and build prototypes while still understanding the code and being able to review, modify, and maintain it properly. What you'll be doing \u2022 Build and maintain full-stack web applications using React.js, Node.js, Express.js, and MongoDB \u2022 Develop and integrate REST APIs \u2022 Create responsive and user-friendly frontend interfaces \u2022 Work with databases and handle data efficiently \u2022 Debug existing applications and fix technical issues \u2022 Integrate third-party APIs and services when required \u2022 Write clean, reusable, and maintainable code \u2022 Work with Git/GitHub and follow a proper development workflow \u2022 Use AI coding tools to improve development speed and productivity \u2022 Work on new ideas, features, and prototypes from concept to implementation \u2022 Collaborate with the team to understand requirements and deliver working solutions. What we offer \u2022 On-site work environment \u2022 Opportunity to work on real-world projects \u2022 Learning and growth opportunities \u2022 Friendly and collaborative team \u2022 Opportunity to work with modern AI development tools and workflows \u2022 Competitive salary based on experience and skills Job Type: Full-time Experience: 2\u20133 years Work Location: On-site Location : New City Phase 2 Pay: Rs35,000.00 - Rs50,000.00 per month Work Location: In person",
-  "score": 93,
-  "reasons": [
-   "role in title: developer, full stack, mern",
-   "AI/automation: ai, vibe cod",
-   "stack: express, mongodb, rest api",
-   "on-site ok",
-   "salary unlisted (neutral)"
-  ]
- },
- {
-  "id": "jsearch-tjhkoulwtzfsewjbtjawuufbqufbqt09okvzd0jdb3dcuvvwcfzeujbtv3bmyzi5ek9uadztrxb1v0v4ww",
-  "source": "jsearch",
-  "title": "MERN Stack Developer",
-  "company": "Carpe Diem Team",
-  "location": "Anywhere",
-  "remote": true,
-  "url": "https://bebee.com/pk/jobs/mern-stack-developer-carpe-diem-team-karachi-sindh--t7xk-810003594",
-  "date": "",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "MERN Stack Developer | Full-time | About Carpe Diem Carpe Diem is a pioneering IT & Software Development firm serving 300+ clients across the USA with a robust team of 600+ professionals. Specializing in a broad spectrum of technological and creative solutions, we empower our clients with innovative approaches in marketing automations, media buying, and custom software development. Our culture champions continuous learning and professional growth, fostering a dynamic and collaborative work environment. Position Overview We are looking for an experienced MERN Stack Developer with strong expertise in both front-end and back-end web development. As a MERN Stack Developer at Carpe Diem, you will work with React.js, Node.js, Express.js , and databases like MongoDB, MySQ L, or PostgreSQL . Experience with AWS services will be considered a strong plus. Skills and Experience \u2022 Experience in both front-end and back-end web development \u2022 Proficiency in JavaScript and the MERN Stack: MongoDB, Express.js, React.js, and Node.js \u2022 Experience with relational and NoSQL databases such as MySQL, PostgreSQL , or MongoDB \u2022 Familiarity with AWS services such as EC2, S3, or Lambda \u2022 Ability to write clean, scalable, and maintainable code \u2022 Collaborate with cross-functional teams for end-to-end project delivery Qualifications \u2022 Minimum 1 year of experience as a MERN Stack Developer \u2022 Strong knowledge of JavaScript and full-stack web development \u2022 Hands-on experience with React.js, Node.js , and Express.js \u2022 Experience with databases including MongoDB, MySQL , or PostgreSQL \u2022 Basic working knowledge of AWS cloud infrastructure \u2022 Strong problem-solving and debugging skills \u2022 Good communication skills, particularly in English Additional Information: \u2022 Type: Full-time \u2022 Salary Range: Market Competitive Benefits: \u2022 Monthly Performance Incentives \u2022 Quarterly Performance Bonuses \u2022 100% Remote \u2022 Interest Free Loans up to PKR 500,000",
-  "score": 91,
-  "reasons": [
-   "role in title: developer, mern",
-   "AI/automation: ai, automation",
-   "stack: aws, express, mongodb, sql",
-   "remote",
-   "salary ~500,000 PKR/month >= 60000 (in text)"
-  ]
- },
- {
-  "id": "jsearch-vhrnsk8yqvpmwg8tzmoybufbqufbqt09okvzd0jdb3dcuvvwcfzeujbtvuzdwtfonfpvtnfjbupht0c5ng",
-  "source": "jsearch",
-  "title": "MernStack Developer (Node JS)",
-  "company": "ALLSTAR TECHNOLOGY",
-  "location": "Karachi, Pakistan",
-  "remote": false,
-  "url": "https://bebee.com/pk/jobs/mernstack-developer-node-js-allstar-technology-karachi--t7xk-853247001",
-  "date": "2026-09-24T00:00:00.000Z",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "MernStack Developer (Node JS) | Full-time | Job Summary We are looking for a dedicated and skilled MERN Stack Developer with around 1.5 years of experience in full-stack development. The ideal candidate should have hands-on experience with Next.js, Express.js (with TypeScript), and strong backend knowledge, particularly with PostgreSQL. You'll be part of a collaborative team working on impactful projects, primarily in the healthcare domain. Key Responsibilities \u2022 Develop and maintain modern frontend interfaces using Next.js, Tailwind CSS, and shadcn/ui \u2022 Build secure, scalable backend APIs using Express.js and TypeScript \u2022 Design and manage relational and non-relational databases, with a focus on PostgreSQL \u2022 Integrate external APIs and services effectively \u2022 Work collaboratively using GitHub, Jira, and version control workflows \u2022 Handle deployments and environment management (development, staging, production) \u2022 Set up and maintain CI/CD pipelines to streamline development and deployment \u2022 Collaborate within a microservices-based architecture \u2022 Optimize system performance, reliability, and scalability Requirements \u2022 1 year of hands-on experience in full-stack development using the MERN stack \u2022 Strong frontend skills in Next.js, React.js, and TypeScript \u2022 Backend development experience with Node.js, Express.js, and Sequelize ORM \u2022 Solid understanding of SQL databases (PostgreSQL preferred) and some exposure to NoSQL \u2022 Experience working with Tailwind CSS and component libraries like shadcn/ui \u2022 Familiarity with AWS cloud infrastructure for deployment and scaling \u2022 Experience setting up and using CI/CD pipelines \u2022 Exposure to microservice architecture \u2022 Prior work in healthcare or similar domain projects is a plus Work Location: In person",
-  "score": 89,
-  "reasons": [
-   "role in title: developer, mern, node",
-   "AI/automation: ai",
-   "stack: aws, express, sql, tailwind",
-   "on-site ok",
-   "salary unlisted (neutral)"
   ]
  },
  {
@@ -149,48 +65,6 @@
   ]
  },
  {
-  "id": "jsearch-oxqtr3c4qxe3m0fwvuy3mufbqufbqt09okvzd0jdb3dcuvvwcfzeujbtbu50ywtor2vftm5zbtlzwldkdg",
-  "source": "jsearch",
-  "title": "Full-Stack Developer (US-Based / Remote / Part-Time)",
-  "company": "Implicit",
-  "location": "Anywhere",
-  "remote": true,
-  "url": "https://www.linkedin.com/jobs/view/full-stack-developer-us-based-remote-part-time-at-implicit-4427546524",
-  "date": "",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Full-Stack Developer (US-Based / Remote / Part-Time) | Part-time | Innovation is at the heart of what we do. At Implicit, we're building the world's leading AI Knowledge Engine for Maintenance and Support. We provide the trusted, accurate knowledge foundation for the hybrid workforce. Implicit is a secure, no-code AI platform that transforms complex, unstructured documentation and data into structured knowledge. We are seeking a part-time full-stack developer to join our team in the United States. As a Full-Stack Developer at Implicit, you will work closely with our data science and product teams to build the next-generation AI product support platform. Join Implicit and come work with some of the world's most talented data scientists, engineers, and thought leaders. As a Full-Stack Developer, you will: \u2022 Agentic Development: Work with maximum productivity using modern agentic coding tools such as Cursor, Codex and Playwright Agents. \u2022 Develop and Maintain Web Interfaces: Build responsive and interactive web applications using modern front-end technologies like React, Redux, React Query, styled modules, SASS, Tailwind, Ant Components. \u2022 Backend Services: Help to develop various backend services in Java, Spring Boot, Python, FastAPI, Postgres, Docker. \u2022 Testing and QA: Maintain high quality code by focusing on Test-Driven Development, using Playwright, Vitest, React Testing Library, test agents. \u2022 Collaborate with Teams: Work closely with the product team to implement designs and ensure that they are fully optimized across all platforms and browsers. \u2022 Write Clean, Maintainable Code: Ensure that code is modular, well-structured, and follows best practices for performance, scalability, and maintainability. \u2022 Optimize Web Performance: Focus on improving the performance of web applications through techniques like lazy loading, code splitting, and optimizing assets. \u2022 Debug and Troubleshoot: Identify issues, debug problems, and optimize the front-end code for improved speed and reliability. \u2022 Contribute to Code Reviews: Participate in code reviews to maintain high coding standards and learn from team members. \u2022 Stay Up-to-Date with AI Development Trends: Continuously learn and implement new front-end technologies, techniques, and be",
-  "score": 77,
-  "reasons": [
-   "role in title: developer, full-stack",
-   "AI/automation: agent, ai",
-   "stack: docker, tailwind",
-   "remote",
-   "salary unlisted (neutral)"
-  ]
- },
- {
-  "id": "jsearch-cfrgzmiysjzuvvfgm1rka0fbqufbqt09okvzd0jdb3dcuvvwcfzeujbtmuzkwjngb1vfzdfza2xgymw4d1",
-  "source": "jsearch",
-  "title": "Sr (MERN) Full Stack",
-  "company": "Techbits Systems",
-  "location": "Pakistan",
-  "remote": false,
-  "url": "https://pk.jooble.org/jdp/-8170212660931408331",
-  "date": "2026-09-26T00:00:00.000Z",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Sr (MERN) Full Stack | Full-time | TECHBITS SYSTEMS is seeking an experienced Senior MERN Full Stack Developer to join our growing team. The ideal candidate will have strong experience building scalable web applications and working confidently across both frontend and backend technologies.This role requires hands-on development, problem-solving ability, and the mindset to build clean, maintainable, and performance-driven applications. Job Responsibilities \u2022 Design, develop, and maintain full-stack web applications using MongoDB, Express.js, React.js, and Node.js \u2022 Build responsive, user-friendly interfaces with React and modern UI practices \u2022 Develop secure and scalable RESTful APIs \u2022 Work with databases to design schemas, optimize queries, and manage data efficiently \u2022 Collaborate with designers, project managers, and other developers to deliver high-quality solutions \u2022 Write clean, reusable, and well-documented code \u2022 Debug, troubleshoot, and optimize application performance \u2022 Participate in code reviews and follow best development practices \u2022 Stay updated with emerging technologies and industry trends Required Skills & Qualifications \u2022 3+ years of hands-on experience with the MERN stack \u2022 Advanced experience with React.js and component-based architecture \u2022 Solid backend experience with Node.js and Express.js \u2022 Experience working with MongoDB or similar NoSQL databases \u2022 Knowledge of REST APIs, authentication, and authorization \u2022 Experience with Git and version control workflows \u2022 Strong problem-solving and communication skills Preferred (Nice to Have) \u2022 Experience with cloud platforms (AWS, Azure, or similar) \u2022 Familiarity with Docker or containerized environments \u2022 Experience with CI/CD pipelines \u2022 Knowledge of Next.js or server-side rendering \u2022 Exposure to Agile or Scrum development processes Job Overviews Location Pakistan Job Title Sr Full Stack (MERN) Hours 40h / week Timings 9:00 am to 05:00 pm #J-18808-Ljbffr",
-  "score": 77,
-  "reasons": [
-   "role in title: full stack, mern",
-   "AI/automation: ai",
-   "stack: aws, docker, express, mongodb, rest api, sql",
-   "on-site ok",
-   "salary unlisted (neutral)"
-  ]
- },
- {
   "id": "weworkremotely-https-weworkremotely-com-remote-jobs-proxify-ab-senior-fullstack-developer-",
   "source": "weworkremotely",
   "title": "Senior Fullstack Developer (React.js / Node.js)",
@@ -230,7 +104,7 @@
    "AI/automation: agent, ai, automation, llm, machine learning",
    "stack: firebase",
    "remote",
-   "salary ~11 USD/month below 500 floor (assumed monthly)",
+   "salary ~11 USD/mo (~3,058 PKR) below 100,000 floor (assumed monthly)",
    "seniority 'senior' - no filter applied per your rule"
   ]
  },
@@ -252,7 +126,7 @@
    "AI/automation: agent, ai, automation",
    "stack: firebase",
    "remote",
-   "salary ~11 USD/month below 500 floor (assumed monthly)",
+   "salary ~11 USD/mo (~3,058 PKR) below 100,000 floor (assumed monthly)",
    "seniority 'senior' - no filter applied per your rule"
   ]
  },
@@ -274,73 +148,8 @@
    "AI/automation: ai, llm",
    "stack: docker, sql, tailwind",
    "remote",
-   "salary ~14,167 USD/month >= 500 (assumed yearly)",
+   "salary ~14,167 USD/mo (~3,938,333 PKR) >= floor 100,000 (assumed yearly)",
    "seniority 'lead' - no filter applied per your rule"
-  ]
- },
- {
-  "id": "jsearch-m25razlwauh5cw9dtgtleefbqufbqt09okvzd0jdb3dcuvvwcfzeujburzvutta5q1dyqkhvv0yxzuvadv",
-  "source": "jsearch",
-  "title": "Senior React Full-stack Developer, Remote Job",
-  "company": "Lemon.io",
-  "location": "Anywhere",
-  "remote": true,
-  "url": "https://dynamitejobs.com/company/lemonio/remote-job/senior-react-full-stack-developer",
-  "date": "2026-09-22T00:00:00.000Z",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Senior React Full-stack Developer, Remote Job | Full-time | Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io \u2014 the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: \u2022 The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers. \u2022 No more hunting for clients or negotiating rates \u2014 let us handle the business side of things so you can focus on what you do best. \u2022 We'll manually find the best project for you according to your skills and preferences. \u2022 Choose a schedule that works best for you. It\u2019s possible to communicate async or minimally overlap within team working hours. \u2022 We respect your seniority so you can expect no micromanagement or screen trackers. \u2022 Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah? \u2022 We will support you from the time you submit the application throughout all cooperation stages. \u2022 Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do. \u2022 Through our community, we will connect you with the best developers from more than 75 countries. Requirements: \u2022 5+ years of software development experience Commercial experience: \u2022 React.js: 3+ years, Node.js: 5+ years, and Next.js: 2+ years OR React.js: 5+ years, Node.js: 3+ years, and Next.js: 2+ years \u2022 Expertise in TypeScript, AWS and AI-assisted coding is a must. Other requirements: \u2022 Strong technical skills: as a Senior Developer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture. \u2022 Clear and effective communication in English \u2014 advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls. \u2022 Strong self-organizational skills \u2014 ability to work full-time remotely with no supervision. \u2022 Reliability \u2014 we want to trust you and expect that you won\u2019t let us and the client down. \u2022 Adaptability and Flexibility \u2014 the ability to onboard the project promptly after accepting it and start delivering results quickly",
-  "score": 72,
-  "reasons": [
-   "role in title: developer, full-stack, react",
-   "AI/automation: ai",
-   "stack: aws",
-   "remote",
-   "salary ~11 USD/month below 500 floor (assumed monthly)",
-   "seniority 'senior' - no filter applied per your rule"
-  ]
- },
- {
-  "id": "arbeitnow-senior-full-stack-developer-all-genders-deutschland-berlin-413704",
-  "source": "arbeitnow",
-  "title": "Senior Full Stack Developer (all genders)",
-  "company": "Hubject Gmbh",
-  "location": "Deutschland: Berlin",
-  "remote": false,
-  "url": "https://www.arbeitnow.com/jobs/companies/hubject-gmbh/senior-full-stack-developer-all-genders-deutschland-berlin-413704",
-  "date": "1790680174",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Senior Full Stack Developer (all genders) | ev charging emobility software developer software fullstack java spring boot sustainability | Your challenge As a Senior Full Stack Software Engineer (all genders) , you will play a key role in building and evolving Hubject's cloud-native eMobility platform. Working across backend, frontend and cloud infrastructure, you will design, develop and operate scalable, secure and high-performing applications that power electric mobility worldwide. You will collaborate closely with Product, Architecture, QA and DevOps to deliver reliable software, shape technical decisions, and continuously improve our engineering practices. Why Hubject We develop ideas and deliver solutions for the eMobility market We are working on the most important growth topics We are an international team of very motivated eMobility enthusiasts AND We have over 30 benefits different categories: Food & drinks (food subsidy on the Euref-Campus restaurants) Mobility (BVG subsidy) Health & sports (Urban sports membership M) Equipment (Laptop etc) Learning and development (yearly training budget and Udemy learning platform access) Hubject Lifestyle (Voiio membership) Family-friendly environment (flex working time) Your Tasks Design, develop and maintain scalable full-stack applications using Java, Spring Boot, Angular and TypeScript. Build secure REST APIs and intuitive, responsive user interfaces while following clean code and software engineering best practices. Develop and operate cloud-native applications on AWS using Docker, Kubernetes and modern CI/CD pipelines. Ensure high software quality through automated testing, code reviews, performance optimization and continuous improvement. Collaborate closely with Product Owners, Designers, QA, Architects and DevOps teams throughout the software development lifecycle. Troubleshoot, analyze and resolve complex technical issues while improving application reliability, scalability and security. Mentor other engineers, contribute to technical discussions and help establish engineering best practices across the team. Your Profile Several years of experie",
-  "score": 71,
-  "reasons": [
-   "role in title: developer, full stack",
-   "AI/automation: ai",
-   "stack: aws, docker, rest api",
-   "on-site ok",
-   "salary unlisted (neutral)",
-   "seniority 'senior' - no filter applied per your rule"
-  ]
- },
- {
-  "id": "jsearch-r2twvgd3rej2tlq3u3fvykfbqufbqt09okvzd0jdb3dcuvvwcfzeujbtwfjovw5ktmribehame5ctws4ng",
-  "source": "jsearch",
-  "title": "Mern Stack Developer",
-  "company": "Petalnex Private Ltd",
-  "location": "Mansehra, Pakistan",
-  "remote": false,
-  "url": "https://www.itjobsinpakistan.com/jobs/view/mern-stack-developer-149",
-  "date": "",
-  "salary_min": null,
-  "salary_max": null,
-  "text": "Mern Stack Developer | Full-time | Petalnex is seeking a highly skilled and experienced MERN Stack Developer to join our dynamic team. As a key member of our development team, you will work on cutting-edge projects, developing robust and scalable applications using the MERN (MongoDB, Express.js, React.js, Node.js) stack. You will collaborate with cross-functional teams to create innovative IT solutions and deliver high-quality software. Key Responsibilities Design, develop, and maintain full-stack web applications using the MERN stack. Build reusable, testable, and efficient code. Implement responsive and user-friendly interfaces using React.js. Develop RESTful APIs and integrate them with front-end components. Collaborate with designers, product managers, and other developers to implement innovative features. Optimize applications for maximum speed, scalability, and security. Troubleshoot and debug issues to improve performance and reliability. Stay updated on emerging technologies and incorporate them into development practices. Work with version control tools like Git for code management. Participate in code reviews to ensure high coding standards. Requirements Technical Skills Proficiency in the MERN stack: MongoDB, Express.js, React.js, Node.js. Solid understanding of front-end technologies like HTML, CSS, and JavaScript (ES6+). Experience with state management libraries (e.g., Redux, Context API). Strong knowledge of RESTful APIs and their integration. Familiarity with databases: MongoDB (experience with aggregation framework is a plus). Experience with Git and version control workflows. Knowledge of web application architecture and best practices. Familiarity with Docker and CI/CD pipelines is a plus. Experience Proven 3 to 5 years of hands-on experience as a MERN Stack Developer. Experience in building and deploying production-ready applications. Previous experience in agile development environments is a plus. Soft Skills Strong problem-solving skills and the ability to think critically. Excellent communication and teamwork skills. A proactive attitude with attention to detail. Ability to work independently and meet tight deadlines. Education Bachelor\u2019s degree in Computer Science, Softwar",
-  "score": 71,
-  "reasons": [
-   "role in title: developer, mern",
-   "AI/automation: ai",
-   "stack: docker, express, mongodb",
-   "on-site ok",
-   "salary unlisted (neutral)"
   ]
  },
  {

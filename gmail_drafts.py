@@ -49,20 +49,27 @@ def get_service():
     return build("gmail", "v1", credentials=creds)
 
 
-def create_draft(to: str, subject: str, body: str, attachment: Path | None = None) -> str:
+def create_draft(to: str, subject: str, body: str, attachment=None, attachments=None) -> str:
+    """Create a draft. attachment = single path (back-compat) or attachments = list."""
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
     from email.mime.application import MIMEApplication
+
+    paths = []
+    if attachment:
+        paths.append(Path(attachment))
+    for a in (attachments or []):
+        paths.append(Path(a))
 
     msg = MIMEMultipart()
     msg["to"] = to
     msg["subject"] = subject
     msg.attach(MIMEText(body, "plain"))
-    if attachment:
-        data = Path(attachment).read_bytes()
-        part = MIMEApplication(data, Name=attachment.name)
-        part["Content-Disposition"] = f'attachment; filename="{attachment.name}"'
-        msg.attach(part)
+    for p in paths:
+        if p.exists():
+            part = MIMEApplication(p.read_bytes(), Name=p.name)
+            part["Content-Disposition"] = f'attachment; filename="{p.name}"'
+            msg.attach(part)
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
     draft = get_service().users().drafts().create(userId="me", body={"message": {"raw": raw}}).execute()
     return draft["id"]

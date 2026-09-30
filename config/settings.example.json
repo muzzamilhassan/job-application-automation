@@ -16,10 +16,9 @@
     "note": "Remote preferred, on-site accepted."
   },
   "salary": {
-    "pkr_monthly_min": 60000,
-    "usd_monthly_min": 500,
-    "rule": "Pakistan-based jobs: PKR 60,000+/month. USD-based / foreign companies: $500+/month (~$6,000/year). Jobs with no listed salary stay in the queue (neutral, not dropped).",
-    "set_by_user": "2026-09-09"
+    "pkr_monthly_min": 70000,
+    "foreign_pkr_monthly_min": 100000,
+    "rule": "Floors are monthly PKR; foreign salaries converted via FX table."
   },
   "experience_filter": {
     "mode": "none",

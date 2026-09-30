@@ -115,9 +115,42 @@ def auto_flow(matches_file):
     if not top:
         lines.append("- nothing new above threshold; all candidates already tracked")
 
+    # ---- daily digest draft: ALWAYS lands one draft in Gmail so the day's
+    # work is visible, with all tailored CVs attached (application-email drafts
+    # are rare because most boards don't expose employer emails).
+    digest_ids = []
+    try:
+        from gmail_drafts import create_draft
+        digest_lines = ["Today's job-automation matches (review + apply):", ""]
+        cv_files = []
+        for j in matches[: settings["auto"]["drafts_per_run"]]:
+            status = {r[0]: r[1] for r in c.execute(
+                "SELECT job_id, status FROM applications").fetchall()}.get(j["id"], "?")
+            digest_lines.append(f"[{j['score']}] {j['title']} - {j['company']}  ({status})")
+            if j.get("url"):
+                digest_lines.append(f"    apply: {j['url']}")
+            digest_lines.append("")
+        cv_dir = ROOT / "tailored"
+        cv_files = sorted(cv_dir.glob("*.docx"), key=lambda p: p.stat().st_mtime, reverse=True)[:5]
+        digest_lines.append("Tailored CVs for these jobs are attached. Form-apply jobs: run the "
+                            "Apply-Assist queue (auto-opens at logon) or browser\\apply_queue.py.")
+        digest_id = create_draft(
+            to=settings["application_email"],
+            subject=f"[Job Automation] {today}: {len(matches[:settings['auto']['drafts_per_run']])} matches",
+            body="\n".join(digest_lines),
+            attachments=cv_files)
+        digest_ids.append(digest_id)
+        lines.append(f"## Digest draft created (id={digest_id}) with {len(cv_files)} CV(s) attached")
+    except Exception as e:
+        lines.append(f"## Digest draft FAILED: {e.__class__.__name__}: {str(e)[:120]}")
+
+    drafted_n = sum(1 for ln in lines if "Gmail draft to" in ln)
+    digest_note = f"drafts to employers: {drafted_n} | digest draft: {len(digest_ids)} | " \
+                  f"form-apply queue: {sum(1 for ln in lines if 'browser-assist queue' in ln)}"
     summary = OUT / f"auto_summary_{today}.md"
+    lines.insert(2, digest_note)
     summary.write_text("\n".join(lines), encoding="utf-8")
-    print(f"\nAuto flow done -> {summary.name} ({len(top)} new | {skipped} already tracked; drafts never sent)")
+    print(f"\nAuto flow done -> {summary.name} ({digest_note})")
 
 
 def main():
