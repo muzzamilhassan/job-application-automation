@@ -142,18 +142,84 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
     doc.save(str(out_path))
 
 
-def clean_cv(cv_path: Path | str | None, name: str = "MuzzamilHassan_CV.docx") -> Path | None:
+def md_to_pdf(md_text: str, out_path: Path) -> None:
+    """Render the tailored CV markdown to a clean one-page-style PDF.
+    fpdf2 core fonts are latin-1: common unicode is mapped, rest replaced."""
+    from fpdf import FPDF
+
+    def safe(s: str) -> str:
+        for a, b in (("\u2014", "-"), ("\u2013", "-"), ("\u2022", "-"),
+                     ("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'),
+                     ("\u201d", '"'), ("\u00b7", "-"), ("\u2265", ">="),
+                     ("\u20b9", "PKR ")):
+            s = s.replace(a, b)
+        return s.encode("latin-1", "replace").decode("latin-1")
+
+    pdf = FPDF()
+    pdf.set_auto_page_break(auto=True, margin=12)
+    pdf.add_page()
+    pdf.set_margins(14, 12, 14)
+    NX = {"new_x": "LMARGIN", "new_y": "NEXT"}  # fpdf2 default keeps x at right edge
+    for line in md_text.splitlines():
+        line = safe(line.rstrip())
+        if not line.strip():
+            pdf.ln(1.5)
+            continue
+        if line.startswith("# "):
+            pdf.set_font("Helvetica", "B", 15)
+            pdf.multi_cell(0, 7, line[2:], **NX)
+            pdf.ln(0.5)
+        elif line.startswith("## "):
+            pdf.ln(1)
+            pdf.set_font("Helvetica", "B", 11.5)
+            pdf.set_draw_color(60, 60, 160)
+            pdf.cell(0, 5, safe(line[3:]), border="B", new_x="LMARGIN", new_y="NEXT")
+        elif line.startswith("### "):
+            pdf.ln(0.8)
+            pdf.set_font("Helvetica", "B", 10.5)
+            pdf.multi_cell(0, 5, line[4:], **NX)
+        elif line.startswith("- "):
+            pdf.set_font("Helvetica", "", 9.5)
+            pdf.set_x(pdf.l_margin + 3)
+            pdf.multi_cell(0, 4.6, "- " + line[2:], **NX)
+        elif line.startswith("Stack:"):
+            pdf.set_font("Helvetica", "I", 9)
+            pdf.multi_cell(0, 4.4, line, **NX)
+        else:
+            pdf.set_font("Helvetica", "", 9.5)
+            pdf.multi_cell(0, 4.6, line, **NX)
+    pdf.output(str(out_path))
+
+
+def ensure_pdf(md_path: Path) -> Path | None:
+    """PDF next to the tailored md; generates it once if missing."""
+    pdf = md_path.with_suffix(".pdf")
+    if pdf.exists():
+        return pdf
+    try:
+        md_to_pdf(md_path.read_text(encoding="utf-8"), pdf)
+        return pdf
+    except Exception as e:
+        print(f"  ! PDF generation failed ({e.__class__.__name__}) - docx fallback")
+        return None
+
+
+def clean_cv(cv_path: Path | str | None, name: str | None = None) -> Path | None:
     """Copy a tailored CV to a clean, recruiter-facing filename.
     Internal per-job files stay separate on disk; this is the copy that gets
-    attached to drafts and uploaded into ATS forms."""
+    attached to drafts and uploaded into ATS forms. Prefers PDF."""
     if not cv_path:
         return None
     src = Path(cv_path)
+    if src.suffix == ".docx":
+        pdf = ensure_pdf(src.with_suffix(".md"))
+        if pdf:
+            src = pdf
     if not src.exists():
         return None
     out_dir = ROOT / "out"
     out_dir.mkdir(exist_ok=True)
-    dst = out_dir / name
+    dst = out_dir / (name or f"MuzzamilHassan_CV{src.suffix or '.pdf'}")
     dst.write_bytes(src.read_bytes())
     return dst
 

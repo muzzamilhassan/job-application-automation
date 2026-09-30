@@ -1,6 +1,7 @@
 selenium>=4.20  # safe browser layer (LinkedIn/Indeed/Glassdoor)
 pypdf>=4.0
 python-docx>=1.1
+fpdf2>=2.7  # CV PDF generation
 # Gmail drafts
 google-api-python-client
 google-auth-httplib2
