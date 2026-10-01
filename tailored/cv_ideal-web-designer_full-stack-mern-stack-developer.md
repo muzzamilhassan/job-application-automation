@@ -1,47 +1,50 @@
 # MUZZAMIL HASSAN
-Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
-Email: muzzamilhassandev@gmail.com | Phone: +923055779207 | Portfolio: https://muzzamilhassandev.vercel.app/
+Full Stack Developer (MERN / PERN / Next.js - SaaS)  
+Islamabad, Pakistan  
+muzzamilhassandev@gmail.com | +923055779207  
+[LinkedIn](https://www.linkedin.com/in/muzzamilhassann/) | [GitHub](https://github.com/muzzamilhassan/) | [Portfolio](https://muzzamilhassandev.vercel.app/)
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in architecting and shipping production-grade SaaS products end-to-end on the JavaScript/TypeScript ecosystem. Proficient in MERN stack with strong Next.js (App Router, Server Components, SSR/ISR) experience. Experienced in AI-assisted development using LangChain, LangGraph, and OpenAI API to accelerate software delivery and implement intelligent features. Skilled in database architecture with MongoDB, PostgreSQL, MySQL, and Drizzle ORM, alongside building scalable REST APIs with JWT/OAuth authentication.
+Full Stack Developer with expertise in architecting and shipping production-grade SaaS products on the JavaScript/TypeScript ecosystem. Proficient in MERN stack with strong Next.js (App Router, Server Components, SSR/ISR) experience. Skilled in integrating AI capabilities into applications using LangChain, LangGraph, and OpenAI API. Built scalable REST APIs with Node.js, Express.js, and NestJS, with deep experience in MongoDB, PostgreSQL, MySQL, and SQLite databases. Committed to leveraging AI-assisted development tools to accelerate software delivery.
 
 ## TECHNICAL SKILLS
-**Core Stack:** MongoDB, Express.js, React, Node.js (3+ years professional experience)
-**Frontend:** React.js, Next.js (App Router, Server Actions, API routes), TypeScript, Tailwind CSS, Redux Toolkit, TanStack Query
-**Backend:** Node.js, Express.js, NestJS, REST API Design, JWT/OAuth2 Authentication, RBAC
-**Databases:** MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM, Firebase, Supabase
-**AI Integration:** LangChain, LangGraph, OpenAI API, AI-assisted development workflows
-**DevOps & Tools:** Vercel, Docker, GitHub Actions, Git, Figma, Stripe API, Google Maps API
+- **Frontend**: React.js, Next.js, Redux Toolkit, TanStack Query, Tailwind CSS
+- **Backend**: Node.js, Express.js, NestJS, REST API Design, JWT/OAuth2 Authentication
+- **Databases**: MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM, Firebase, Supabase
+- **AI Integration**: LangChain, LangGraph, OpenAI API
+- **Languages**: TypeScript, JavaScript (ES6+), HTML5, CSS3
+- **DevOps**: Vercel, Docker, GitHub Actions, AWS Amplify
+- **Tools**: Git, GitHub, Figma, JIRA, Stripe API, Google Maps API
 
 ## PROFESSIONAL EXPERIENCE
-**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
+**Full Stack Developer** | Revnix  
+*Jan 2025 - Present*  
 - Architected and shipped production features for an enterprise headless CMS (Nextly) using Next.js App Router, TypeScript, and TanStack Query
-- Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system supporting multiple user roles
-- Designed and maintained a pluggable multi-database adapter system (PostgreSQL, MySQL, SQLite)
+- Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system
+- Designed and maintained a pluggable multi-database adapter system supporting MongoDB, PostgreSQL, MySQL, and SQLite
 - Optimized performance through SSR, caching, lazy loading, code splitting, and API improvements
 - Delivered pixel-perfect, responsive UIs from Figma designs with strict a11y and SEO standards
 
 ## PROJECTS
-**Nextly** - Enterprise Headless CMS & SaaS Framework (Live)
-- Built a TypeScript-first CMS framework for content-driven products using Next.js, comparable in scope to Payload CMS
-- Implemented dual-mode content workflow: code-defined models plus drag-and-drop visual builder
-- Created pluggable database adapters supporting PostgreSQL, MySQL, SQLite via Drizzle ORM
-- Developed containerized solution with Docker and CI/CD on Vercel
+**Nextly** - Enterprise Headless CMS & SaaS Framework  
+- Built a TypeScript-first CMS framework for content-driven products using Next.js, comparable to Payload CMS or Sanity
+- Implemented dual-mode content workflow: code-defined models plus drag-and-drop visual builder with instant preview
+- Created pluggable database adapters (PostgreSQL, MySQL, SQLite) via Drizzle ORM with zero code changes when switching databases
+- Integrated AI capabilities for content generation and management
 
-**RextAI** - AI-Powered Content Intelligence Platform (Live)
+**RextAI** - AI-Powered Content Intelligence Platform  
 - Developed SaaS platform for AI-driven content generation, editing, and workflow automation
 - Implemented AI article generation editor with keyword input and E-E-A-T optimization controls
-- Integrated AI tools for content creation and workflow automation using LangChain and OpenAI API
-- Implemented one-click CMS auto-publish with WordPress, Webflow, and Ghost APIs
+- Built one-click CMS auto-publish integrating WordPress, Webflow, and Ghost APIs with OAuth flows
+- Optimized frontend performance with SSR, caching, lazy loading, and code splitting
 
-**HireIQ** - AI-Powered Recruitment & Evaluation Platform (Live)
-- Built AI-assisted recruitment and candidate evaluation platform end-to-end
-- Integrated LangChain and LangGraph for AI-powered candidate analysis and matching
-- Implemented Next.js with SSR for optimal performance and user experience
+**HireIQ** - AI-Powered Recruitment & Evaluation Platform  
+- Created AI-assisted recruitment and candidate evaluation platform end-to-end
+- Integrated LangChain and OpenAI API for intelligent candidate assessment and matching
 
 ## EDUCATION
-**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024
-- Haripur, Pakistan
+**BS in Computer Science** | University of Haripur  
+*Aug 2020 - Aug 2024* | Haripur, Pakistan
 
 ## LANGUAGES
 English, Urdu
