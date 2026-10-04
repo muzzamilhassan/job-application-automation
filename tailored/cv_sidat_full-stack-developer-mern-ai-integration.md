@@ -1,9 +1,9 @@
 # MUZZAMIL HASSAN
-Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
+Full Stack Developer (MERN + AI Integration) | Islamabad, Pakistan
 muzzamilhassandev@gmail.com | +923055779207 | https://muzzamilhassandev.vercel.app/
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in the MERN stack and AI integration, specializing in building production-grade SaaS products. Proficient in Next.js, React.js, Node.js, Express.js, and MongoDB/PostgreSQL. Experience implementing AI-powered features using LangChain, LangGraph, and OpenAI API. Strong focus on creating responsive, high-quality user interfaces with a deep understanding of full-stack development principles.
+Full Stack Developer with expertise in the MERN stack and AI integration, specializing in building production-grade SaaS products. Proficient in Next.js, React.js, Node.js, Express.js, and MongoDB, with additional experience in PostgreSQL, Drizzle ORM, and AI technologies including LangChain, LangGraph, and OpenAI API. Demonstrated ability to architect and ship complete applications from frontend to backend, with a focus on responsive UIs, scalable APIs, and AI-powered features.
 
 ## TECHNICAL SKILLS
 **Frontend:** Next.js, React.js, HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS, Redux Toolkit, TanStack Query
@@ -14,42 +14,38 @@ Full Stack Developer with expertise in the MERN stack and AI integration, specia
 
 **AI Integration:** LangChain, LangGraph, OpenAI API
 
-**DevOps & Tools:** Docker, Vercel (CI/CD), GitHub Actions, Git, AWS Amplify, Stripe API
+**DevOps & Deployment:** Docker, Vercel (CI/CD), GitHub Actions, AWS Amplify
+
+**Tools & Practices:** Git, Figma, JIRA, API Integration, Component Architecture, Performance Optimization, SEO, a11y
 
 ## PROFESSIONAL EXPERIENCE
-
-**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
-- Architected and shipped production features for an enterprise headless CMS using Next.js App Router, TypeScript, and TanStack Query
+**Full Stack Developer** | Revnix (Jan 2025 - Present)
+- Architected and shipped production features for an enterprise headless CMS (Nextly) using Next.js, TypeScript, and TanStack Query
 - Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system
 - Designed and maintained a pluggable multi-database adapter system supporting PostgreSQL, MySQL, and SQLite
-- Built responsive, pixel-perfect UIs from Figma designs with Tailwind CSS, adhering to strict a11y and SEO standards
-- Optimized performance through SSR, caching, lazy loading, and code splitting techniques
+- Built a fully customizable admin dashboard for collections, media uploads, user roles, and system settings
+- Delivered pixel-perfect, responsive UIs with Tailwind CSS, strict a11y and SEO standards
 
 ## KEY PROJECTS
+**RextAI** | AI-Powered Content Intelligence Platform (Live)
+- SaaS platform for AI-driven content generation, editing, and workflow automation
+- Integrated OpenAI API with LangChain and LangGraph for AI article generation
+- Implemented one-click CMS auto-publish with WordPress, Webflow, and Ghost APIs
+- Optimized frontend performance with SSR, caching, lazy loading, and code splitting
 
-**RextAI** | AI-Powered Content Intelligence Platform
-- Developed a SaaS platform for AI-driven content generation and workflow automation
-- Implemented AI article generation with keyword input and E-E-A-T optimization controls
-- Integrated CMS auto-publishing with WordPress, Webflow, and Ghost APIs using OAuth flows
-- Achieved frontend performance optimization through SSR, caching, and code splitting
+**HireIQ** | AI-Powered Recruitment & Evaluation Platform (Live)
+- AI-assisted recruitment and candidate evaluation platform built end-to-end
+- Integrated LangChain and OpenAI API for AI-powered candidate assessment
+- Developed responsive UI with Next.js and TypeScript
 
-**HireIQ** | AI-Powered Recruitment & Evaluation Platform
-- Built an AI-assisted recruitment and candidate evaluation platform end-to-end
-- Implemented AI features using LangChain and OpenAI API for candidate assessment
-
-**Nextly** | Enterprise Headless CMS & SaaS Framework
-- Created a TypeScript-first CMS framework for content-driven products in Next.js
-- Developed dual-mode content workflow: code-defined models plus visual builder with instant preview
-- Implemented RBAC with permissions for team content access
-- Built pluggable database adapters for PostgreSQL, MySQL, and SQLite with zero code changes when switching databases
-
-**21Century Equipment** | B2B Equipment Management Platform
-- Developed responsive web application using Next.js, React, and Redux Toolkit
-- Integrated Stripe payment processing and Google Maps API for location-based features
+**Nextly** | Enterprise Headless CMS & SaaS Framework (Live)
+- TypeScript-first CMS framework for content-driven products using Next.js
+- Implemented dual-mode content workflow: code-defined models plus visual builder
+- Built pluggable database adapters supporting PostgreSQL, MySQL, and SQLite
+- Containerized with Docker for reproducible builds and CI/CD
 
 ## EDUCATION
-
-**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024
+**BS in Computer Science** | University of Haripur (Aug 2020 - Aug 2024)
 - Haripur, Pakistan
 
 ## LANGUAGES

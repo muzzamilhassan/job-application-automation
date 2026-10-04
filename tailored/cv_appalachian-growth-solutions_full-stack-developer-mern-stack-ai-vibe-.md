@@ -3,71 +3,48 @@ Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
 muzzamilhassandev@gmail.com | +923055779207 | https://muzzamilhassandev.vercel.app/
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in building production-grade web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in architecting and shipping end-to-end SaaS products with a focus on AI integration. Proficient in modern development practices, AI-assisted coding, and creating responsive, user-friendly interfaces. Demonstrated ability to work on both frontend and backend, develop REST APIs, and work with various databases while maintaining clean, reusable code.
+Full Stack Developer with expertise in building production-grade SaaS products using the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in architecting and shipping end-to-end solutions with a focus on AI integration, responsive UIs, and scalable backend systems. Proficient in modern development practices, AI-assisted coding, and creating maintainable codebases.
 
-## SKILLS
-**MERN Stack**
-- MongoDB, Express.js, React.js, Node.js
-- Next.js, TypeScript, TanStack Query
-- REST API Design, JWT/OAuth2 Authentication
+## TECHNICAL SKILLS
+- **Frontend**: React.js, Next.js, Redux Toolkit, TanStack Query, Tailwind CSS
+- **Backend**: Node.js, Express.js, NestJS, REST API Design, JWT/OAuth2 Authentication
+- **Databases**: MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM, Firebase, Supabase
+- **AI Integration**: LangChain, LangGraph, OpenAI API
+- **Development Tools**: Git, GitHub, Docker, Vercel, AWS Amplify
+- **Practices**: Component architecture, SEO, a11y, Performance Optimization
 
-**AI Development**
-- LangChain, LangGraph, OpenAI API
-- AI-powered content generation and workflow automation
-- AI-assisted development and debugging
-
-**Frontend**
-- HTML5, CSS3, JavaScript (ES6+)
-- React.js, Next.js, Redux Toolkit
-- Tailwind CSS, Responsive Design
-
-**Backend**
-- Node.js, Express.js, NestJS
-- Authentication & Authorization (RBAC)
-- API Integration (Stripe, Google Maps)
-
-**Databases**
-- MongoDB, PostgreSQL, MySQL, SQLite
-- Drizzle ORM, Firebase, Supabase
-
-**Development Tools**
-- Git, GitHub, Docker
-- Vercel (CI/CD), AWS Amplify
-- Figma, JIRA
-
-## EXPERIENCE
-**Full Stack Developer** | Revnix (fmr. Revnix Technologies)
-Jan 2025 - Present | On-site
-
-- Architected and shipped production features for an enterprise headless CMS using Next.js, TypeScript, and TanStack Query
+## PROFESSIONAL EXPERIENCE
+**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
+- Architected and shipped production features for enterprise headless CMS using Next.js App Router, TypeScript, and TanStack Query
 - Owned full authentication and access control layer with JWT-based auth and flexible RBAC system
-- Designed and maintained a pluggable multi-database adapter system supporting MongoDB, PostgreSQL, MySQL, and SQLite
-- Built responsive UIs with Tailwind CSS, adhering to strict a11y and SEO standards
-- Optimized performance through SSR, caching, lazy loading, and code splitting
+- Designed and maintained pluggable multi-database adapter system supporting PostgreSQL, MySQL, SQLite
+- Optimized performance through SSR, caching, lazy loading, code splitting, and API improvements
+- Built customizable admin dashboard for collections, media uploads, user roles, and system settings
+- Delivered pixel-perfect, responsive UIs with Tailwind CSS, strict a11y and SEO standards
 
-## PROJECTS
-**RextAI** | AI-Powered Content Intelligence Platform
-- Built a SaaS platform for AI-driven content generation and workflow automation using Next.js, React.js, and Node.js
-- Integrated LangChain, LangGraph, and OpenAI API for AI article generation with keyword optimization
-- Implemented one-click CMS auto-publish with WordPress, Webflow, and Ghost APIs using OAuth flows
+## KEY PROJECTS
+**RextAI** - AI-Powered Content Intelligence Platform
+- Built SaaS platform for AI-driven content generation, editing, and workflow automation
+- Implemented AI article generation with keyword input, E-E-A-T optimization, and humanization layer
+- Integrated CMS auto-publishing with WordPress, Webflow, and Ghost APIs using OAuth flows
 - Optimized frontend performance with SSR, caching, lazy loading, and code splitting
 
-**HireIQ** | AI-Powered Recruitment & Evaluation Platform
-- Developed AI-assisted recruitment platform with React.js, Node.js, and AI integration
-- Implemented LangChain and OpenAI API for candidate evaluation and assessment features
+**HireIQ** - AI-Powered Recruitment & Evaluation Platform
+- Developed AI-assisted recruitment and candidate evaluation platform end-to-end
+- Implemented LangChain and LangGraph for AI-powered candidate analysis and matching
 
-**Nextly** | Enterprise Headless CMS & SaaS Framework
-- Created a TypeScript-first CMS framework for content-driven products using Next.js and Drizzle ORM
-- Built dual-mode content workflow with code-defined models and drag-and-drop visual builder
-- Implemented pluggable database adapters supporting MongoDB, PostgreSQL, MySQL, and SQLite
+**Nextly** - Enterprise Headless CMS & SaaS Framework
+- Created TypeScript-first CMS framework for content-driven products in Next.js
+- Developed dual-mode content workflow: code-defined models plus drag-and-drop visual builder
+- Implemented RBAC with permissions for team content access
+- Built pluggable database adapters for PostgreSQL, MySQL, SQLite with zero code changes
 
-**21Century Equipment & 4Rivers Equipment** | E-Commerce Platforms
-- Developed B2B equipment management and enterprise e-commerce platforms using React.js, Redux Toolkit, and Stripe API
-- Integrated Google Maps API for location-based features
+**21Century Equipment** - B2B Equipment Management Platform
+- Developed full-stack application with Next.js, React, Redux Toolkit, Stripe, and Google Maps API
 
 ## EDUCATION
-**BS in Computer Science** | University of Haripur
-Aug 2020 - Aug 2024 | Haripur, Pakistan
+**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024
+- Haripur, Pakistan
 
 ## LANGUAGES
-English, Urdu
+- English, Urdu
