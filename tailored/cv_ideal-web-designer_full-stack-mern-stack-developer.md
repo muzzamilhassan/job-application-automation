@@ -1,64 +1,68 @@
 # MUZZAMIL HASSAN
 Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
-
-**Email:** muzzamilhassandev@gmail.com | **Phone:** +923055779207 | **LinkedIn:** linkedin.com/in/muzzamilhassann | **GitHub:** github.com/muzzamilhassan | **Portfolio:** muzzamilhassandev.vercel.app
+📧 muzzamilhassandev@gmail.com | 📱 +923055779207 | 💼 https://www.linkedin.com/in/muzzamilhassann/ | 🌐 https://github.com/muzzamilhassan/
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in the MERN stack and Next.js, specializing in building production-grade SaaS products. Proficient in AI-assisted development using LangChain, LangGraph, and OpenAI APIs to accelerate software delivery. Experienced in architecting scalable web applications from database to UI, with strong skills in TypeScript, React, Node.js, and MongoDB. Demonstrated ability to implement secure authentication systems, optimize performance through SSR/SSG, and build responsive user interfaces.
+Full Stack Developer with expertise in architecting and shipping production-grade SaaS products using the MERN stack and Next.js. Proficient in AI-assisted development workflows and integrating LLM APIs into applications. Experienced in building scalable REST APIs, implementing secure authentication systems, and optimizing database performance across MongoDB, PostgreSQL, and MySQL.
 
 ## TECHNICAL SKILLS
-**Core Stack:** MongoDB, Express.js, React.js, Node.js (MERN) | Next.js (App Router, Server Components, SSR/ISR) | TypeScript | JavaScript (ES6+)
+**Core Stack**
+- MongoDB, Express.js, React, Node.js (MERN)
+- Next.js (App Router, Server Components, Server Actions, API routes)
+- TypeScript, JavaScript (ES6+)
 
-**Frontend Development:** React.js | Next.js | Redux Toolkit | TanStack Query | Tailwind CSS | HTML5 | CSS3
+**Frontend Development**
+- React.js, Next.js, Redux Toolkit, TanStack Query
+- Server-Side Rendering (SSR), Static Site Generation (SSG)
+- Tailwind CSS, Responsive Design, Component Architecture
 
-**Backend Development:** Node.js | Express.js | NestJS | REST API Design | JWT / OAuth2 Authentication | RBAC
+**Backend & Database**
+- Node.js, Express.js, NestJS
+- MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM
+- REST API Design, Authentication (JWT, OAuth2), RBAC
 
-**Database Management:** MongoDB | PostgreSQL | MySQL | SQLite | Drizzle ORM | Firebase | Supabase
+**AI Integration**
+- LangChain, LangGraph, OpenAI API
+- AI-powered content generation and workflow automation
+- Experience with AI-assisted development tools and practices
 
-**AI Integration:** LangChain | LangGraph | OpenAI API | AI-assisted development workflows
-
-**Additional Technologies:** Git | GitHub Actions | Docker | Vercel | Figma | JIRA | Stripe API
+**Additional Technologies**
+- Docker, Vercel, GitHub Actions
+- Git, Figma, JIRA, Stripe API
 
 ## PROFESSIONAL EXPERIENCE
 
-**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
+**Full Stack Developer** | Revnix (fmr. Revnix Technologies)
+*Jan 2025 - Present | Islamabad, Pakistan*
+
 - Architected and shipped production features for an enterprise headless CMS (Nextly) using Next.js App Router, TypeScript, and TanStack Query
 - Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system supporting multiple user roles
-- Designed and maintained a pluggable multi-database adapter system (PostgreSQL, MySQL, SQLite)
-- Optimized performance and UX through SSR, caching, lazy loading, code splitting, and API improvements
-- Built a fully customizable admin dashboard for collections, media uploads, user roles, and system settings
-- Delivered pixel-perfect, responsive UIs from Figma designs with Tailwind CSS, strict a11y and SEO standards
+- Designed and maintained a pluggable multi-database adapter system supporting PostgreSQL, MySQL, and SQLite
+- Optimized performance through SSR, caching, lazy loading, and code splitting
+- Delivered pixel-perfect, responsive UIs from Figma designs with strict a11y and SEO standards
 
-## PROJECTS
+## KEY PROJECTS
 
-**RextAI** | AI-Powered Content Intelligence Platform (Live)
-- SaaS platform for AI-driven content generation, editing, and workflow automation
-- AI article generation editor with keyword input, E-E-A-T optimization controls, and humanization layer
-- One-click CMS auto-publish integrating WordPress, Webflow, and Ghost APIs with OAuth flows
-- Frontend performance via SSR, caching, lazy loading, code splitting
-- **Tech Stack:** Next.js, React.js, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
+**Nextly** - Enterprise Headless CMS & SaaS Framework
+- Built a TypeScript-first CMS framework for content-driven products using Next.js, comparable to Payload CMS or Sanity
+- Implemented dual-mode content workflow: code-defined models plus drag-and-drop visual builder
+- Created pluggable database adapters (PostgreSQL, MySQL, SQLite) via Drizzle ORM
+- Containerized with Docker; CI/CD on Vercel and self-hosted
 
-**HireIQ** | AI-Powered Recruitment & Evaluation Platform (Live)
-- AI-assisted recruitment and candidate evaluation platform built end-to-end
-- **Tech Stack:** Next.js, React, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
+**RextAI** - AI-Powered Content Intelligence Platform
+- Developed SaaS platform for AI-driven content generation and workflow automation
+- Integrated LangChain and OpenAI API for AI article generation with E-E-A-T optimization
+- Implemented one-click CMS auto-publish with WordPress, Webflow, and Ghost APIs
+- Optimized frontend performance with SSR, caching, and code splitting
 
-**Nextly** | Enterprise Headless CMS & SaaS Framework (Live)
-- TypeScript-first CMS framework for content-driven products inside Next.js
-- Dual-mode content workflow: code-defined models plus drag-and-drop visual builder with instant preview
-- RBAC with permissions for team content access
-- PostgreSQL, MySQL, SQLite via pluggable Drizzle ORM adapters
-- **Tech Stack:** Next.js, TypeScript, Drizzle ORM, Node.js, TanStack Query, Docker, Monorepo
-
-**21Century Equipment** | B2B Equipment Management Platform (Live)
-- **Tech Stack:** Next.js, React.js, Redux Toolkit, Stripe, Google Maps API
-
-**4Rivers Equipment** | Enterprise E-Commerce & Rental Platform (Live)
-- **Tech Stack:** Next.js, React.js, Redux Toolkit, Stripe, Google Maps
+**HireIQ** - AI-Powered Recruitment & Evaluation Platform
+- Built end-to-end AI-assisted recruitment and candidate evaluation platform
+- Integrated LangChain and LangGraph with OpenAI API for intelligent candidate assessment
 
 ## EDUCATION
 
-**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024
-- Haripur, Pakistan
+**BS in Computer Science** | University of Haripur
+*Aug 2020 - Aug 2024 | Haripur, Pakistan*
 
 ## LANGUAGES
 English, Urdu
