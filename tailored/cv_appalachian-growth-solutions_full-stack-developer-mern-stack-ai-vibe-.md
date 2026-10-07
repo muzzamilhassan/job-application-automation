@@ -1,81 +1,49 @@
 # MUZZAMIL HASSAN
-Full Stack Developer (MERN / PERN / Next.js - SaaS) | AI & Vibe Coding Experience
+Full Stack Developer (MERN / PERN / Next.js - SaaS) | Islamabad, Pakistan
 
-**Contact:** muzzamilhassandev@gmail.com | +923055779207 | Islamabad, Pakistan  
-**LinkedIn:** https://www.linkedin.com/in/muzzamilhassann/ | **GitHub:** https://github.com/muzzamilhassan/ | **Portfolio:** https://muzzamilhassandev.vercel.app/
+**Email:** muzzamilhassandev@gmail.com | **Phone:** +923055779207 | **LinkedIn:** https://www.linkedin.com/in/muzzamilhassann/ | **GitHub:** https://github.com/muzzamilhassan/ | **Portfolio:** https://muzzamilhassandev.vercel.app/
 
-## Professional Summary
-Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and AI-assisted development. Experienced in building production-grade SaaS applications from the ground up, with a strong focus on creating responsive UIs, scalable REST APIs, and efficient database solutions. Proficient in using modern AI tools like LangChain, LangGraph, and OpenAI API to accelerate development, explore ideas, debug code, and build prototypes while maintaining the ability to review, modify, and maintain AI-generated code.
+## Summary
+Full Stack Developer with extensive experience building production-grade SaaS products using the MERN stack (MongoDB, Express.js, React.js, Node.js). Proficient in both frontend and backend development, with expertise in creating responsive UIs, developing REST APIs, and working with databases. Strong background in AI-assisted development using LangChain, LangGraph, and OpenAI API to accelerate development workflows while maintaining code quality and maintainability.
 
 ## Skills
-### Frontend Development
-- React.js, Next.js (App Router, Server Components, SSR/ISR)
-- Redux Toolkit, TanStack Query
-- HTML5, CSS3, Tailwind CSS
-- Responsive design, Performance optimization, SEO, a11y
+- **Languages:** HTML5, CSS3, JavaScript (ES6+), TypeScript
+- **Frontend:** React.js, Next.js, Redux Toolkit, TanStack Query, Tailwind CSS
+- **Backend:** Node.js, Express.js, NestJS, REST API Design, JWT/OAuth2 Authentication, RBAC
+- **Databases:** MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM, Firebase, Supabase
+- **AI Development:** LangChain, LangGraph, OpenAI API
+- **Tools & Practices:** Git, GitHub, Docker, Component Architecture, Lazy Loading, Code Splitting, SEO, a11y, Performance Optimization
 
-### Backend Development
-- Node.js, Express.js, NestJS
-- REST API Design
-- JWT / OAuth2 Authentication
-- RBAC (Role-Based Access Control)
-
-### Database Technologies
-- MongoDB, PostgreSQL, MySQL, SQLite
-- Drizzle ORM, Firebase, Supabase
-
-### AI & Machine Learning
-- LangChain, LangGraph
-- OpenAI API integration
-- AI-powered content generation and workflow automation
-
-### Development Tools & Practices
-- Git, GitHub, Bitbucket
-- Docker, Vercel (CI/CD, Edge Functions)
-- AWS Amplify, GitHub Actions
-- Component architecture, Code splitting, Lazy loading
-
-## Experience
-
-### Full Stack Developer | Revnix (fmr. Revnix Technologies)
-*Jan 2025 - Present | Islamabad, Pakistan*
-
-- Architected and shipped production features for an enterprise headless CMS (Nextly) using Next.js App Router, TypeScript, and TanStack Query
-- Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system supporting multiple user roles
-- Designed and maintained a pluggable multi-database adapter system (PostgreSQL, MySQL, SQLite)
-- Optimized performance and UX through SSR, caching, lazy loading, code splitting, and API improvements
-- Built a fully customizable admin dashboard for collections, media uploads, user roles, and system settings
-- Delivered pixel-perfect, responsive UIs from Figma designs with Tailwind CSS, strict a11y and SEO standards
+## Professional Experience
+**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present
+- Architected and shipped production features for enterprise applications using React.js, Node.js, Express.js, and MongoDB
+- Developed and maintained REST APIs with JWT-based authentication and flexible RBAC systems
+- Designed and implemented database solutions with MongoDB and other database systems
+- Built responsive, user-friendly frontend interfaces with React.js and Tailwind CSS
+- Optimized application performance through SSR, caching, lazy loading, and code splitting
+- Utilized AI tools (LangChain, LangGraph, OpenAI API) to accelerate development workflows and prototype new features
+- Collaborated with team members using Git/GitHub following proper development workflows
 
 ## Projects
 
-### RextAI | AI-Powered Content Intelligence Platform
-- SaaS platform for AI-driven content generation, editing, and workflow automation
-- AI article generation editor with keyword input, E-E-A-T optimization controls, and humanization layer
-- One-click CMS auto-publish integrating WordPress, Webflow, and Ghost APIs with OAuth flows
-- Frontend performance via SSR, caching, lazy loading, code splitting
-- **Tech Stack:** Next.js, React.js, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
+**RextAI** | AI-Powered Content Intelligence Platform
+- Built a SaaS platform for AI-driven content generation and workflow automation using React.js, Node.js, and OpenAI API
+- Implemented AI article generation with keyword input and E-E-A-T optimization controls
+- Integrated AI-assisted development tools to accelerate feature implementation and prototyping
+- Developed one-click CMS auto-publish functionality with OAuth flows for WordPress, Webflow, and Ghost
 
-### HireIQ | AI-Powered Recruitment & Evaluation Platform
-- AI-assisted recruitment and candidate evaluation platform built end-to-end
-- **Tech Stack:** Next.js, React, TypeScript, Node.js, LangChain, LangGraph, OpenAI API, Tailwind CSS
+**HireIQ** | AI-Powered Recruitment & Evaluation Platform
+- Created an AI-assisted recruitment platform using React.js, Node.js, and LangChain
+- Implemented AI-driven candidate evaluation tools to streamline the hiring process
+- Leveraged modern AI development tools to rapidly prototype and test new features
 
-### Nextly | Enterprise Headless CMS & SaaS Framework
-- TypeScript-first CMS framework for content-driven products inside Next.js
-- Dual-mode content workflow: code-defined models plus drag-and-drop visual builder with instant preview
-- RBAC with permissions for team content access
-- PostgreSQL, MySQL, SQLite via pluggable Drizzle ORM adapters
-- **Tech Stack:** Next.js, TypeScript, Drizzle ORM, Node.js, TanStack Query, Docker, Monorepo
-
-### 21Century Equipment & 4Rivers Equipment | E-Commerce & Rental Platforms
-- B2B equipment management and enterprise e-commerce platforms
-- **Tech Stack:** Next.js, React, Redux Toolkit, Stripe, Google Maps API
+**Nextly** | Enterprise Headless CMS & SaaS Framework
+- Developed a TypeScript-first CMS framework using Next.js, React.js, and Node.js
+- Built a pluggable multi-database adapter system supporting MongoDB, PostgreSQL, MySQL, and SQLite
+- Created a fully customizable admin dashboard with role-based access control
 
 ## Education
-
-### Bachelor of Science in Computer Science
-*University of Haripur | Haripur, Pakistan*
-*Aug 2020 - Aug 2024*
+**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024
 
 ## Languages
-- English, Urdu
+English, Urdu
