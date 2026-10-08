@@ -1,51 +1,46 @@
 # MUZZAMIL HASSAN
-**Full Stack Developer (MERN / PERN / Next.js - SaaS)** | Islamabad, Pakistan  
-📧 muzzamilhassandev@gmail.com | 📱 +923055779207 | [LinkedIn](https://www.linkedin.com/in/muzzamilhassann/) | [GitHub](https://github.com/muzzamilhassan/) | [Portfolio](https://muzzamilhassandev.vercel.app/)
+**Full Stack Developer (MERN / PERN / Next.js - SaaS)**  
+Islamabad, Pakistan | muzzamilhassandev@gmail.com | +923055779207  
+LinkedIn: https://www.linkedin.com/in/muzzamilhassann/ | GitHub: https://github.com/muzzamilhassan/ | Portfolio: https://muzzamilhassandev.vercel.app/
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with expertise in architecting and shipping production-grade SaaS products using the MERN stack (MongoDB, Express.js, React.js, Node.js). Proficient in building scalable REST APIs, pixel-perfect UIs, and cross-database architectures. Strong experience with TypeScript, Next.js, and modern JavaScript frameworks. Built multiple SaaS platforms from the ground up with a focus on performance, security, and user experience.
+Full Stack Developer with expertise in the MERN stack, specializing in architecting and shipping production-grade SaaS products end-to-end. Proficient in MongoDB, Express.js, React.js, and Node.js, with additional experience in TypeScript, Next.js, and various database technologies. Demonstrated ability to build scalable REST APIs, implement robust authentication systems, and deliver pixel-perfect responsive UIs with performance optimization.
 
 ## TECHNICAL SKILLS
-- **Frontend**: React.js, Next.js, Redux Toolkit, TanStack Query, Tailwind CSS
-- **Backend**: Node.js, Express.js, NestJS, REST API Design
-- **Databases**: MongoDB, PostgreSQL, MySQL, SQLite, Firebase, Supabase
-- **Authentication**: JWT / OAuth2 Authentication, RBAC
-- **AI Integration**: LangChain, LangGraph, OpenAI API
-- **DevOps & Cloud**: Vercel, Docker, GitHub Actions, AWS Amplify
-- **Tools**: Git, GitHub, Figma, JIRA, Stripe API
+- **Frontend**: React.js, Next.js, HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express.js, REST API Design, JWT/OAuth2 Authentication, RBAC
+- **Databases**: MongoDB, PostgreSQL, MySQL, SQLite, Drizzle ORM, Firebase, Supabase
+- **Development Tools**: Git, GitHub, Docker, Vercel, AWS Amplify, GitHub Actions
+- **Additional**: Component architecture, Performance Optimization, SEO, a11y
 
 ## PROFESSIONAL EXPERIENCE
-**Full Stack Developer** | Revnix (Jan 2025 - Present)
+**Full Stack Developer** | Revnix (fmr. Revnix Technologies) | Jan 2025 - Present  
 - Architected and shipped production features for an enterprise headless CMS using Next.js, TypeScript, and TanStack Query
-- Owned the full authentication and access control layer with JWT-based auth and RBAC system
+- Owned the full authentication and access control layer: JWT-based auth and a flexible RBAC system
 - Designed and maintained a pluggable multi-database adapter system supporting MongoDB, PostgreSQL, MySQL, and SQLite
-- Built responsive UIs with Tailwind CSS, adhering to strict a11y and SEO standards
+- Built RESTful APIs for seamless frontend-backend communication
 - Optimized application performance through SSR, caching, lazy loading, and code splitting
-
-## PROJECTS
-**Nextly - Enterprise Headless CMS & SaaS Framework (Live)**
-- Built a TypeScript-first CMS framework using Next.js, React, and Node.js
-- Implemented dual-mode content workflow with code-defined models and visual builder
-- Created RBAC system with permissions for team content access
-- Developed pluggable database adapters for MongoDB, PostgreSQL, MySQL, and SQLite
-- Integrated S3, Vercel Blob, and UploadThing storage adapters
-
-**RextAI - AI-Powered Content Intelligence Platform (Live)**
-- Developed SaaS platform for AI-driven content generation and workflow automation
-- Built AI article generation editor with keyword input and E-E-A-T optimization
-- Implemented one-click CMS auto-publish with WordPress, Webflow, and Ghost APIs
-- Optimized frontend performance with SSR, caching, and code splitting
-
-**HireIQ - AI-Powered Recruitment & Evaluation Platform (Live)**
-- Created AI-assisted recruitment and candidate evaluation platform
-- Integrated LangChain and OpenAI API for intelligent candidate assessment
-
-**21Century Equipment & 4Rivers Equipment - E-Commerce Platforms (Live)**
-- Developed B2B equipment management and enterprise e-commerce platforms
-- Implemented Stripe payment integration and Google Maps API functionality
+- Delivered pixel-perfect, responsive UIs with strict a11y and SEO standards
 
 ## EDUCATION
-**BS in Computer Science** | University of Haripur (Aug 2020 - Aug 2024)
+**BS in Computer Science** | University of Haripur | Aug 2020 - Aug 2024  
+Haripur, Pakistan
+
+## KEY PROJECTS
+**Nextly** - Enterprise Headless CMS & SaaS Framework  
+- Built with Next.js, React.js, Node.js, and MongoDB
+- Features pluggable database adapters including MongoDB, PostgreSQL, MySQL, and SQLite
+- Implements JWT authentication and RBAC system for multi-tenant environments
+- Optimized with SSR, caching, lazy loading, and code splitting
+
+**RextAI** - AI-Powered Content Intelligence Platform  
+- Developed with React.js, Node.js, and MongoDB
+- Built RESTful APIs for content management and third-party integrations
+- Implemented authentication and authorization systems
+
+**HireIQ** - AI-Powered Recruitment & Evaluation Platform  
+- Full-stack application using React.js, Node.js, and MongoDB
+- Created RESTful APIs for candidate management and evaluation workflows
 
 ## LANGUAGES
 English, Urdu
